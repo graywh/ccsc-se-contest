@@ -1,0 +1,35 @@
+ActiveState ActivePerl
+Adobe Acrobat
+AOL Instant Messenger
+Cluster
+ConTEXT
+DBMS Copy
+Easy CD Creator
+Google Toolbar
+Hex Workshop
+McAfee VirusScan
+Microsoft .NET Framework
+Microsoft Java VM
+Microsoft Office XP
+Microsoft Visual J# .NET
+Microsoft Visual Studio .NET
+Mozilla Firefox
+Mulberry
+Powertoy for Windows XP
+	Alt-Tab Task Switcher
+	Calculator
+	CmdHere
+	Tweak UI
+	Virtual Desktop Manager
+Python
+R
+RealVNC
+SAS for Windows
+Spybot Search & Destroy
+Sun Java2 JRE
+Sun Java2 SDK
+Synergy
+Ultramon
+Weatherbug
+Winamp
+Zone Alarm
