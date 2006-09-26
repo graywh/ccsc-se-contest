@@ -19,15 +19,5 @@ if __name__ == "__main__":
 		line = fin.readline()
 		if line == "":
 			break
-		ch = line[0]
-		line = line[1:]
-		d = ord(ch)
-		if d >= ord('0') and d <= ord('9'):
-			print ch,
-		else:
-			print "(",
-			line = parse(line)
-			print ch,
-			line = parse(line)
-			print ")",
+        line = parse(line)
 		print
