@@ -1,0 +1,23 @@
+Dataset 1:
+ABAB
+ABAC
+ABCB
+Total number of possible seating arrangements = 3
+
+Dataset 2:
+ABABI
+ABABS
+ABAIS
+ABIAI
+ABIAS
+ABIBI
+ABIBS
+ABISB
+ABISI
+ABSAI
+ABSBI
+AIAIS
+AIBIS
+AIBSI
+BIBIS
+Total number of possible seating arrangements = 15

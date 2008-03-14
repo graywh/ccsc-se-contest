@@ -1,0 +1,5 @@
+Case 1: up
+Case 2: Take the stairs!
+Case 3: up down up
+Case 4: Take the stairs!
+Case 5: down up down

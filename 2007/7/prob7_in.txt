@@ -1,0 +1,10 @@
+3 4
+Albania 2
+Chile 1
+Brazil 3
+4 5
+Andorra 2
+Switzerland 1
+Belgium 3
+Ireland 2
+0 0

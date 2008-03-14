@@ -1,0 +1,19 @@
+ORDER 1
+1 Cheeseburger
+1 Chili Dog
+2 French Fries
+2 Pepsi-Cola
+ORDER 1 TOTAL in 1957 = $1.65
+ORDER 1 TOTAL in 2007 = $7.23
+
+ORDER 2
+4 Frosty Shake
+ORDER 2 TOTAL in 1957 = $1.60
+ORDER 2 TOTAL in 2007 = $7.01
+
+ORDER 3
+2 Apple Pie
+1 Hot Coffee
+1 Milk
+ORDER 3 TOTAL in 1957 = $0.85
+ORDER 3 TOTAL in 2007 = $3.73
