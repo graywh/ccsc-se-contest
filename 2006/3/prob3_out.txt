@@ -1,0 +1,8 @@
+Booklet 1:  
+Folio 1:  4 5 6 3
+Folio 2:  2 7 8 1
+
+Booklet 2:  
+Folio 1:  6 7 8 5
+Folio 2:  4 9 10 3
+Folio 3:  2 - - 1

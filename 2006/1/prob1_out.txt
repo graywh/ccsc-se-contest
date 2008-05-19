@@ -1,0 +1,7 @@
+2x is invalid
+R2D2 is valid
+new is invalid
+Joe's is invalid
+cheese_soup is valid
+Main Street is invalid
+Class is valid

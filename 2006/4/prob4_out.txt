@@ -1,0 +1,5 @@
+1: Adolf Hitler has a Bacon number of 3.
+2: Kevin Bacon has a Bacon number of 0.
+3: Kenneth Tobey has a Bacon number of 1.
+4: Curt Bois has a Bacon number of 2.
+5: Problem Writer has a Bacon number of infinity.

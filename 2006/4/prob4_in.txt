@@ -1,0 +1,10 @@
+3
+Kevin Bacon Kenneth Tobey
+Kenneth Tobey Curt Bois
+Curt Bois Adolf Hitler
+5
+Adolf Hitler
+Kevin Bacon
+Kenneth Tobey
+Curt Bois
+Problem Writer
