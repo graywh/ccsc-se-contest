@@ -1,0 +1,13 @@
+08A	Smith,C	532
+08B	Swift,T	004
+08C	Sumner,M	047
+10A	Johnston,A	444
+LAST
+2
+1
+Willis,D	738
+4
+Brown,C	388
+Barger,J	112
+Thomas,S	476
+Thomas,R	888 
