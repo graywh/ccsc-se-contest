@@ -8,18 +8,13 @@ if __name__ == "__main__":
 			break
 		if line[-1] == "\n":
 			line = line[:-1]
-		rows,cols = line.split()
-		rows = int(rows)
-		cols = int(cols)
+		rows,cols = map(int, line.split())
 		ary = []
-		for i in range(0,rows):
-			ln = []
-			line = fin.readline()
-			ln = line.split()
-			ary.append(ln)
+		for i in xrange(rows):
+			ary.append(fin.readline().split())
 		print "Message", msg, "=>",
 		j = cols - 1
-		for i in range(0,rows):
+		for i in xrange(rows):
 			print ary[i][j],
 			j -= 1
 			if j < 0:

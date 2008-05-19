@@ -59,9 +59,9 @@ def isValid(grid, r, c, dimR, dimC):
 	return (r > -1) and (r < dimR) and (c > -1) and (c < dimC) and (grid[r][c] == 'Y')
 
 def dumpGrid(grid, dimR, dimC):
-	for i in range(0,dimR):
+	for i in xrange(dimR):
 		print "  ",
-		for j in range(0,dimC):
+		for j in xrange(dimC):
 			if grid[i][j] == 'X' or grid[i][j] == 'Y':
 				print "-",
 			else:
@@ -79,10 +79,10 @@ if __name__ == "__main__":
 		dimR = int(dimR)
 		dimC = int(dimC)
 		grid = [0] * dimR
-		for i in range(0,dimR):
+		for i in xrange(dimR):
 			line = fin.readline()
 			ln = [0] * dimC
-			for j in range(0,dimC):
+			for j in xrange(dimC):
 				ln[j] = line[j]
 			grid[i] = ln
 		print

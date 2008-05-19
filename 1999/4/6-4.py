@@ -5,27 +5,22 @@ if __name__ == "__main__":
 		line = fin.readline()
 		if line == "":
 			break
-		dim = line.split()
-		dim = int(dim[0])
+		dim = int(line.split()[0])
 		diag = 0
 		magic = 1
-		grid = [0] * (dim + 1)
-		for i in range(0, dim):
-			line = fin.readline()
-			line = line.split()
-			g = [None] * (dim + 1)
-			for j in range(0, dim):
-				g[j] = int(line[j])
-			g[-1] = 0
-			grid[i] = g
-		grid[-1] = [0] * (dim + 1)
-		for i in range(0, dim):
+		grid = []
+		for i in xrange(dim):
+			g = map(int, fin.readline().split())
+			g.append(0)
+			grid.append(g)
+		grid.append([0] * (dim + 1))
+		for i in xrange(dim):
 			grid[dim][dim] += grid[i][i]
 			diag += grid[dim - i - 1][i]
-			for j in range(0, dim):
+			for j in xrange(dim):
 				grid[i][dim] += grid[i][j]
 				grid[dim][j] += grid[i][j]
-		for i in range(0, dim):
+		for i in xrange(dim):
 			if grid[i][dim] != diag:
 				magic = 0
 			if grid[dim][i] != diag:

@@ -45,10 +45,10 @@ if __name__ == "__main__":
 		visited = []
 		visit = []
 		grid = []
-		for i in range(0, gridDim):
+		for i in xrange(gridDim):
 			line = fin.readline().split()
 			ln = []
-			for i in range(0, gridDim):
+			for i in xrange(gridDim):
 				ln.append(int(line[i]))
 			grid.append(ln)
 		visit.append(start)
@@ -56,7 +56,7 @@ if __name__ == "__main__":
 		while not complete:
 			num = len(visit)
 			cnt += 1
-			for i in range(0, num):
+			for i in xrange(num):
 				here = visit.pop(0)
 				visited.append(here)
 				if here == end:

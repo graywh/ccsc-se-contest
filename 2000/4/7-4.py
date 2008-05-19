@@ -9,7 +9,7 @@ if __name__ == "__main__":
 		if line[-1] == "\n":
 			lin = line[:-1]
 		sentence = line.split()
-		for i in range(0, len(sentence)):
+		for i in xrange(len(sentence)):
 			word = sentence.pop(0).lower()
 			if word[-1] > "z" or word[-1] < "a":
 				word = word[:-1]

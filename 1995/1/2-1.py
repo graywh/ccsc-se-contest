@@ -1,15 +1,7 @@
 #!/usr/bin/python
-fin = file("prob1.in","r")
 i = 1
-while 1:
-	line = fin.readline()
-	if line == "":
-		break
-	if line[-1] == "\n":
-		line = line[:-1]
-	a,b = line.split()
-	a = int(a)
-	b = int(b)
+for line in file('prob1.in', 'r').read().splitlines():
+	a,b = map(int, line.split())
 	print "%s X %s = " % (a,b),
 	sum = 0
 	while a > 0:

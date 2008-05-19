@@ -1,28 +1,13 @@
 #!/usr/bin/python
-ary = ["0","0","0","0","0","0","0"]
-chk = ["1","0","0","0","0","0","1"]
-fin = open("prob4.in", "r")
-q = []
-p = []
-while 1:
-	line = fin.readline()
-	if line == "":
-		break
-	if line[-1] == "\n":
-		line = line[:-1]
-	for i in range(len(line)):
-		q.append(line[i])
-while q != []:
-	for i in range(0,7):
-		ary[i] = q.pop(0)
-	if ary == chk:
-		while 1:
-			cnt = 0
-			for i in range(0,7):
-				ary[i] = q.pop(0)
-			if ary == chk:
-				break
-			for i in range(0,7):
-				cnt += int(ary[i]) * 2 ** (6 - i)
-			p.append(chr(cnt))
-print "".join([i for i in p])
+import sys
+
+chk = [1,0,0,0,0,0,1]
+for line in file('prob4.in', 'r').read().splitlines():
+    q = map(int, list(line))
+    recording = False
+    for i in xrange(len(q) / 7):
+        if q[i*7:(i+1)*7] == chk:
+            recording = not recording
+        elif recording:
+            sys.stdout.write(chr(sum([x * 2 ** (6-i) for i,x in enumerate(q[i*7:(i+1)*7])])))
+    sys.stdout.write('\n')

@@ -25,7 +25,7 @@ while 1:
 	code = []
 	if act == "encode":
 		print "Message",cnt,"(encoded): ",
-		for i in range(len(line)):
+		for i in xrange(len(line)):
 			ch = ord(line[i])
 			if ch > 99:
 				code.append(getHund(ch))

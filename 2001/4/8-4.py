@@ -12,7 +12,7 @@ if __name__ == "__main__":
 		print "Score Summary for", name
 		print "-----------------------"
 		score = 0
-		for i in range(1, 6):
+		for i in xrange(1, 6):
 			line = fin.readline()
 			line = line.split()
 			x = float(line[0])

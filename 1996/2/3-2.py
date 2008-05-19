@@ -30,7 +30,7 @@ if __name__ == "__main__":
 		if not valid(mm, dd, yyyy):
 			print "Invalid date in the input."
 			continue
-		for i in range(0,mm - 1):
+		for i in xrange(mm - 1):
 			dp += daysInMonth[i];
 		dp += dd
 		dp += jan1(mm, dd, yyyy)

@@ -18,7 +18,7 @@ if __name__ == "__main__":
 				freq[i - ord("a")] += 1
 			cnt += 1
 		print "Line %s: " % ln,
-		for i in range(0,26):
+		for i in xrange(26):
 			if 20 * freq[i] > 3 * cnt:
 				print chr(i + ord("A")), "is a super freq.",
 				nofreqs = 0

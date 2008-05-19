@@ -10,7 +10,7 @@ if __name__ == "__main__":
 		if line[-1] == "\n":
 			line = line[:-1]
 		cont = 0
-		for i in range(0,len(line)):
+		for i in xrange(len(line)):
 			ch = line[i]
 			if cont:
 				cont -= 1
@@ -27,6 +27,6 @@ if __name__ == "__main__":
 			else:
 				print "(",
 				mem.append(ch)
-		for i in range(0,extra):
+		for i in xrange(extra):
 			print ")",
 		print

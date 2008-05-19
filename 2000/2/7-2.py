@@ -21,7 +21,7 @@ if __name__ == "__main__":
 				yyyy = int(ln[4])
 				if yyyy % 4 == 0 and yyyy % 100 or yyyy % 400 == 0:
 					days[1] += 1
-				for i in range(0, 12):
+				for i in xrange(12):
 					if month == months[i]:
 						mm = i
 				newmm = mm

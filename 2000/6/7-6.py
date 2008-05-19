@@ -12,16 +12,16 @@ if __name__ == "__main__":
 		test = []
 		test2 = []
 		perc = []
-		for i in range(0, cont * 2):
+		for i in xrange(cont * 2):
 			test.append(int(line[i + 2]))
-		for j in range(0, cont):
+		for j in xrange(cont):
 			test2.append(test[j + cont] / float(test[j]))
 			perc.append(0)
 		tmp = 0
 		while tmp < bagC:
 			maxi = 0
 			val = 0
-			for k in range(0, cont):
+			for k in xrange(cont):
 				if test2[k] > maxi:
 					maxi = test2[k]
 					val = k
@@ -37,6 +37,6 @@ if __name__ == "__main__":
 				break
 		print "Game", cnt
 		print "------"
-		for q in range(0, cont):
+		for q in xrange(cont):
 			print "Container %s: %s" % (q + 1, perc[q])
 		cnt += 1

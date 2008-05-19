@@ -43,7 +43,7 @@ if __name__ == "__main__":
 		key = []
 		output = []
 		key.append(notes[i])
-		for j in range(0,6):
+		for j in xrange(6):
 			i = (i + change[j]) % 12
 			key.append(notes[i])
 		while 1:

@@ -9,7 +9,7 @@ def match(name = "", n = 1, names = [], bill = []):
 	if bill[n - 1].child == []:
 		names.append(name)
 	else:
-		for i in range(0,len(bill[n - 1].child)):
+		for i in xrange(len(bill[n - 1].child)):
 			match(name, bill[n - 1].child[i], names, bill)
 
 if __name__ == "__main__":
@@ -27,7 +27,7 @@ if __name__ == "__main__":
 		m = int(m)
 		bill = [None] * num
 		bill[0] = Node(v)
-		for i in range(0,m):
+		for i in xrange(m):
 			line = fin.readline()
 			p, num, s, v = line.split()
 			p = int(p)

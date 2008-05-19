@@ -17,18 +17,18 @@ if __name__ == "__main__":
 		ships = line.split()
 		ships = int(ships[0])
 		plot = []
-		for i in range(0, ships):
+		for i in xrange(ships):
 			line = fin.readline()
-			line = line.split()
+			line = map(float, line.split())
 			pt = Point()
-			pt.x = float(line[0])
-			pt.y = float(line[1])
+			pt.x = line[0]
+			pt.y = line[1]
 			plot.append(pt)
 		mini = distance(plot[0], plot[1])
 		n1 = 0
 		n2 = 1
-		for i in range(0, ships - 1):
-			for j in range(i + 1, ships):
+		for i in xrange(ships - 1):
+			for j in xrange(i + 1, ships):
 				tmp = distance(plot[i], plot[j])
 				if tmp < mini:
 					mini = tmp
