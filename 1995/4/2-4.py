@@ -2,7 +2,7 @@
 import sys
 
 chk = [1,0,0,0,0,0,1]
-for line in file('prob4.in', 'r').read().splitlines():
+for line in file('prob4.in', 'r'):
     q = map(int, list(line))
     recording = False
     for i in xrange(len(q) / 7):

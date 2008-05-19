@@ -13,7 +13,7 @@ def validDay(mm, dd, yyyy):
 
 def valid(mm, dd, yyyy):
 	return ((mm > 0) and (mm <= 12) and (dd > 0) and (dd <= validDay(mm, dd, yyyy)) and (yyyy > 0))
-	
+
 if __name__ == "__main__":
 	fin = file("dates.dat", "r")
 	while 1:
@@ -30,10 +30,5 @@ if __name__ == "__main__":
 		if not valid(mm, dd, yyyy):
 			print "Invalid date in the input."
 			continue
-		for i in xrange(mm - 1):
-			dp += daysInMonth[i];
-		dp += dd
-		dp += jan1(mm, dd, yyyy)
-		dp -= 1
+		dp = sum(daysInMonth[0:mm-1]) + dd + jan1(mm, dd, yyyy) - 1
 		print "%s/%s/%s falls on a %s" % (mm, dd, yyyy, days[dp % 7])
-

@@ -25,7 +25,7 @@ def find(conf, size, coll=set(), arr=[], count=0):
         #sarr = ''.join(reorder(arr))
         for sarr in coll:
         #if not sarr in coll:
-            if same([x for x in sarr], arr):
+            if same(list(sarr), arr):
                 return (coll, count)
         coll.add(''.join(arr))
         print ''.join(arr)
