@@ -14,13 +14,6 @@ order = {
 steps = [
             "up",
             "down",
-            "up",
-            "down",
-            "up",
-            "down",
-            "up",
-            "down",
-            "up",
         ]
 
 sys.stdin.readline()
@@ -32,7 +25,7 @@ for i,l in enumerate(lines):
     f, t = [order[int(x)] for x in l.split()]
     if f < t:
         for j in xrange(f, t):
-            print steps[j],
+            print steps[j % 2],
         print
     else:
         print "Take the stairs!"

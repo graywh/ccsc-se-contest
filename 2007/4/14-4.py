@@ -1,8 +1,5 @@
 import sys
 
-def width(x):
-    return sum(x) - max(x)
-
 def needed(x, p):
     x.sort()
     s = sum(x)
