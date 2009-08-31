@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-chk = [1,0,0,0,0,0,1]
+CHK = [1,0,0,0,0,0,1]
+
 File.readlines('prob4.in').each do |line|
   line = line.strip.chars.collect { |c| c.to_i }
   recording = false

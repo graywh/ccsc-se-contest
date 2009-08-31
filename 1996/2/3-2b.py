@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import datetime, calendar
 
 for line in file('dates.dat', 'r'):
