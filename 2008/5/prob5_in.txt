@@ -1,0 +1,3 @@
+2
+(R(DDR)(R(DDD)R))
+(DRD)

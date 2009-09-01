@@ -102,3 +102,12 @@
 5 The Myrtle Beach Pavilion
 6 Convex Hull
 7 Seating Arrangements
+
+2008 - 15
+1 Recount
+2 Roman Numerals
+3 Disney Movie Vault
+4 The Finnish Chef
+5 The Election
+6 Great Caesar Cipher
+7 Stacks of Money
