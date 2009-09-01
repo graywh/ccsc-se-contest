@@ -1,7 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+
 import sys
 
-x = {
+morse = {
     '.-'  :'A', '-...':'B', '-.-.':'C',
     '-..' :'D', '.'   :'E', '..-.':'F',
     '--.' :'G', '....':'H', '..'  :'I',
@@ -13,14 +14,16 @@ x = {
     '-.--':'Y', '--..':'Z', '*'   :' '
 }
 
-fin = file("prob2.in", "r")
-while 1:
-    line = fin.readline()
-    if line == "":
-        break
-    if line[-1] == "\n":
-        line = line[:-1]
-    line = line.replace("   ", " * ")
-    codes = line.split()
-    for code in codes:
-        sys.stdout.write(x[code])
+def splt(x):
+    for i in x:
+        prnt(conv(i.replace("   ", " * ").split()))
+
+def conv(x):
+    for i in x:
+        yield morse[i]
+
+def prnt(x):
+    for i in x:
+        sys.stdout.write(i)
+
+splt(file("prob2.in"))
