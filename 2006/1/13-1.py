@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import re, sys
 
 indentifier = re.compile(r'^[a-z_$][\w$]*$', re.I)

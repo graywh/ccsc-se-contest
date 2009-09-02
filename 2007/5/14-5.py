@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 inflation = 1.03 ** 50
@@ -21,13 +23,11 @@ menu = {
         'M': ('Popcorn', 0.15),
         }
 
-lines = sys.stdin.read().splitlines()
-
 order = 1
 total = 0
 print "ORDER %s" % order
 
-for l in lines:
+for l in sys.stdin.read().splitlines():
     n, i = l.split()
     n = int(n)
     if n == 0:

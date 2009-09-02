@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 keys = {
@@ -27,9 +29,7 @@ def reduct(a, b):
         sys.stdout.write(pause(a,b))
     sys.stdout.write(b)
 
-lines = sys.stdin.read().splitlines()
-
-for l in lines:
+for l in sys.stdin.read().splitlines()
     if l[0] == "*":
         break
     reduce(reduct, convert(l), None)

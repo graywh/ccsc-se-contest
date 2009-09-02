@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 keys = {
@@ -18,9 +20,7 @@ def pause(p, n):
     else:
         return ""
 
-lines = sys.stdin.read().splitlines()
-
-for l in lines:
+for l in sys.stdin.read().splitlines()
     if l[0] == "*":
         break
     sys.stdout.write(keys[l[0].lower()])

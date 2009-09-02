@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 order = {
@@ -17,10 +19,7 @@ steps = [
         ]
 
 sys.stdin.readline()
-
-lines = sys.stdin.read().splitlines()
-
-for i,l in enumerate(lines):
+for i,l in enumerate(sys.stdin.read().splitlines()):
     print "Case %s:" % (i+1),
     f, t = [order[int(x)] for x in l.split()]
     if f < t:

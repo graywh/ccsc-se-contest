@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 def needed(x, p):
@@ -18,9 +20,7 @@ def needed(x, p):
 paper = int(sys.stdin.readline().split()[2])
 sys.stdin.readline()
 
-lines = sys.stdin.read().splitlines()
-
-for i,l in enumerate(lines):
+for i,l in enumerate(sys.stdin.read().splitlines()):
     print "Gift %s" % (i+1),
     d = [int(x) for x in l.split('x')]
     n = needed(d, paper)

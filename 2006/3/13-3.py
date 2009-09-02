@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys, math
 
 count = int(sys.stdin.readline().split()[0])

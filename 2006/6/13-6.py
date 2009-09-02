@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import datetime, sys
 
 f = '%m.%d.%Y'

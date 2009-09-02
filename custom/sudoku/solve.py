@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 def recursive(data, index, count):
     if index == 81:
@@ -50,40 +51,37 @@ def validSub(data, index):
             results.append(data[(sub / 9) + (i / 3)][(sub % 9) + (i % 3)])
     return True
 
-if __name__ == '__main__':
-    fin = file('puzzle.txt', 'r')
+fin = file('puzzle.txt', 'r')
 
-    while True:
-        data = [
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0],
-                [0,0,0,0,0,0,0,0,0]
-                ]
-        line = fin.readline()
-        if line == "" or line is None:
+while True:
+    data = [
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0],
+            [0,0,0,0,0,0,0,0,0]
+            ]
+    line = fin.readline().strip()
+    if line == "" or line is None:
+        break
+    data[0] = map(int, line)
+    for i in xrange(1,9):
+        line = fin.readline().strip()
+        data[i] = map(int, line)
+
+    testIndex = 0
+    while data[testIndex / 9][testIndex % 9] == 0:
+        testIndex += 1
+        if testIndex == 81:
             break
-        for j in xrange(9):
-            data[0][j] = int(line[j])
-        for i in xrange(1,9):
-            line = fin.readline()
-            for j in xrange(9):
-                data[i][j] = int(line[j])
+    #print '\n'.join([''.join([str(i) for i in l]) for l in data])
+    count = recursive(data, 0, 0)
+    print
+    print '%s solutions found' % (count)
+    print
 
-        testIndex = 0
-        while data[testIndex / 9][testIndex % 9] == 0:
-            testIndex += 1
-            if testIndex == 81:
-                break
-        #print '\n'.join([''.join([str(i) for i in l]) for l in data])
-        count = recursive(data, 0, 0)
-        print
-        print '%s solutions found' % (count)
-        print
-    
-    fin.close()
+fin.close()

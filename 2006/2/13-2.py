@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys, math
 
 lines = sys.stdin.read().splitlines()

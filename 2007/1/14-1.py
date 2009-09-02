@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 
 ups = {
@@ -14,9 +16,7 @@ ups = {
         }
 
 sys.stdin.readline()
-lines = sys.stdin.read().splitlines()
-
-for l in lines:
+for l in sys.stdin.read().splitlines():
     c = [ups[x] for x in l]
     c.reverse()
     c = ''.join(c)

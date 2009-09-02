@@ -1,4 +1,5 @@
-#!/usr/bin/python
+#!/usr/bin/env python
+
 class PTree:
     class Node:
         def __init__(self, d):
@@ -47,14 +48,13 @@ class PTree:
                 return 0
         return 1
 
-if __name__ == "__main__":
-    cnt = 1
-    for line in file('prob3.in', 'r').read().splitlines():
-        line = list(line)
-        t = PTree(line)
-        print "Tree %s is" % cnt,
-        if t.isPal():
-            print "a palintree. Its palintree is %s." % t.getPal()
-        else:
-            print "not a palintree."
-        cnt += 1
+cnt = 1
+for line in file('prob3.in', 'r').read().splitlines():
+    line = list(line)
+    t = PTree(line)
+    print "Tree %s is" % cnt,
+    if t.isPal():
+        print "a palintree. Its palintree is %s." % t.getPal()
+    else:
+        print "not a palintree."
+    cnt += 1

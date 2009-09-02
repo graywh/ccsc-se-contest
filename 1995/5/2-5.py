@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+
 def getOne(n):
     return n % 10
 

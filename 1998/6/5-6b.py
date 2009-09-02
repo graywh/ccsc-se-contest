@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import datetime
 
 for line in file('prob6.in', 'r').read().splitlines():
