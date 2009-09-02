@@ -20,8 +20,8 @@ File.readlines('prob5.in').each_slice(2) do |act, line|
   case act
   when "encode"
     code = []
-    (1..line.length).each do |i|
-      ch = line[i-1]
+    0...line.length.each do |i|
+      ch = line[i]
       code << getHund(ch) if ch > 99
       code << getTen(ch)
       code << getOne(ch)

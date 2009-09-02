@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines[0..-2].each_slice(2) do |code,line|
+STDIN.readlines[0...-1].each_slice(2) do |code,line|
   shift, opp = code.split
   case opp
   when 'D'
