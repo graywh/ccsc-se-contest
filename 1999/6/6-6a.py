@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 cnt = 1
-for line in file('prob6.in', 'r').read().splitlines():
+for line in file('prob6_in.txt', 'r').read().splitlines():
     line = map(int, line.split())
     caproom = line[0]
     n = line[1]

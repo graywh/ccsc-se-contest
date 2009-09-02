@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-fin = file("buffy.dat")
+fin = file("prob4_in.txt")
 msg = 1
 while 1:
     line = fin.readline()

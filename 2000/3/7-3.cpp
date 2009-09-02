@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	bool nofreqs;
 	int ln = 1, cnt, freq[26] = {0};
 	string line;

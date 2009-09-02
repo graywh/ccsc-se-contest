@@ -15,7 +15,7 @@ def validDay(mm, dd, yyyy):
 def valid(mm, dd, yyyy):
     return ((mm > 0) and (mm <= 12) and (dd > 0) and (dd <= validDay(mm, dd, yyyy)) and (yyyy > 0))
 
-fin = file("dates.dat", "r")
+fin = file("prob2_in.txt", "r")
 while 1:
     dp, dd, mm, yyyy = 0, 0, 0, 0
     line = fin.readline()

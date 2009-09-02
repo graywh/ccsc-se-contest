@@ -49,7 +49,7 @@ class PTree:
         return 1
 
 cnt = 1
-for line in file('prob3.in', 'r').read().splitlines():
+for line in file('prob3_in.txt', 'r').read().splitlines():
     line = list(line)
     t = PTree(line)
     print "Tree %s is" % cnt,

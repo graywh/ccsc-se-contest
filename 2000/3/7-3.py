@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-fin = file("prob3.in", "r")
+fin = file("prob3_in.txt", "r")
 ln = 1
 while 1:
     line = fin.readline()

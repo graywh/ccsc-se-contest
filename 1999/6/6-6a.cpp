@@ -6,7 +6,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	int caproom, cnt = 1, n, tmp;
 	vector<int> conts;
 	vector<int> ship;

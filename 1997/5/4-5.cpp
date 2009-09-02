@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("mono.in");
+	ifstream in("mono_in.txt");
 	while (!in.eof())
 	{
 		queue<char> line;

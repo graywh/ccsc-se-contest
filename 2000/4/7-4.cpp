@@ -7,7 +7,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob4.in");
+	ifstream in("prob4_in.txt");
 	string line, word;
 	vector<string> sentence, sorted, reversed;
 	int cnt = 1;

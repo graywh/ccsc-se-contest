@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	vector<int> ary;
 	int channel = 1, cross, dim, tmp;
 	while (!in.eof())

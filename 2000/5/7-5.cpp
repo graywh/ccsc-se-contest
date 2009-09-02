@@ -18,7 +18,7 @@ double distance(Point a, Point b)
 
 void main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	int ships, n1, n2, cnt = 1;
 	double min, tmp;
 	vector<Point> plot;

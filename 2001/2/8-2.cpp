@@ -49,7 +49,7 @@ bool isValid(Point p, int dim)
 
 void main()
 {
-	ifstream in("prob2.in");
+	ifstream in("prob2_in.txt");
 	set<Point> visited;
 	queue<Point> visit;
 	int gridDim, num, cnt;

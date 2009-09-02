@@ -22,7 +22,7 @@ int oper(int pos, string prefix)
 
 int main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	string prefix;
 	while (in >> prefix)
 	{

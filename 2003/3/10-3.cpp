@@ -6,7 +6,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	map<int, string> conv;
 	conv[1] = "Bogey";
 	conv[0] = "Par";

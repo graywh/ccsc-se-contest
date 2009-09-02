@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	int z, i, m, l;
 	cout << "\nZ  I  M  L  Length" << endl
 		<< "------------------" << endl;

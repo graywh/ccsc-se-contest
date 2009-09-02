@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-for line in file("mono.in"):
+for line in file("prob5_in.txt"):
     mono = True
     up = line[0] < line[1]
     for i in xrange(len(line) - 1):

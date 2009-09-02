@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-fin = file("prob4.in", "r")
+fin = file("prob4_in.txt", "r")
 while 1:
     line = fin.readline()
     if line == "":

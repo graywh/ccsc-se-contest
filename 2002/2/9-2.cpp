@@ -4,7 +4,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob2.in");
+	ifstream in("prob2_in.txt");
 	int x, y, total, min;
 	while (in >> min)
 	{

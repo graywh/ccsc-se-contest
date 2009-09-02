@@ -55,7 +55,7 @@ bool isComp(vector<int> vs)
 
 void main()
 {
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	ifstream data("static.dat");
 	int n, v, o, cl;
 	string tmp;

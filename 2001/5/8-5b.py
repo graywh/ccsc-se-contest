@@ -2,7 +2,7 @@
 
 import sys
 
-fin = file("prob5.in")
+fin = file("prob5_in.txt")
 mem = []
 extra = 0
 while 1:

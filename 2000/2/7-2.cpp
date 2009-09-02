@@ -10,7 +10,7 @@ string months[] = {"January", "February", "March", "April", "May", "June", "July
 
 void main()
 {
-	ifstream in("prob2.in");
+	ifstream in("prob2_in.txt");
 	string line, day, month, monthday, tmp;
 	int yyyy, mm, dd, newmm, newdd;
 	while (getline(in, line))

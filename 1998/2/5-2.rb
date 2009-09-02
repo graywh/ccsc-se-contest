@@ -9,7 +9,7 @@ def clear(grid, dim, x, y)
   end
 end
 
-file = File.new('prob2.in')
+file = File.new('prob2_in.txt')
 targets = 0
 dim = 0...file.readline.to_i
 grid = file.readlines.collect do |line|

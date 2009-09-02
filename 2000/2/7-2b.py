@@ -4,7 +4,7 @@ import datetime, calendar
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
-fin = file('prob2.in', 'r')
+fin = file('prob2_in.txt', 'r')
 while 1:
     line = fin.readline()
     if line == '':

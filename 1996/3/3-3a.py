@@ -3,7 +3,7 @@
 symbols = ("&", ".", ",", ":", ";", "?", "!", "-", "(", ")")
 
 cnt = 0
-for line in file("words.txt"):
+for line in file("prob3_in.txt"):
     for symbol in symbols:
         line = line.replace(symbol, "")
     cnt += len(line.split())

@@ -3,7 +3,7 @@
 trash = [",", ".", "!", "?", "\n", ":", ";"]
 swap = ["Th", "Kh", "Wh", "Tr", "Sh", "Fl", "th", "kh", "wh", "tr", "sh", "fl"]
 
-fin = file("pig.dat")
+fin = file("prob6_in.txt")
 while 1:
     line = fin.readline()
     if line == "":

@@ -20,7 +20,7 @@ void parse(ifstream& in)
 
 int main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	char t;
 	while (in >> t)
 	{

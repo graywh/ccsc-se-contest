@@ -17,7 +17,7 @@ def oper(pos, pre):
     sys.stdout.write(")")
     return q + 2
 
-fin = file("prob5.in")
+fin = file("prob5_in.txt")
 while 1:
     pre = fin.readline()
     if pre == "":

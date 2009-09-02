@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-for line in file('prob2.in', 'r').read().splitlines():
+for line in file('prob2_in.txt', 'r').read().splitlines():
     numcoins = int(line)
     p1 = []
     p2 = []

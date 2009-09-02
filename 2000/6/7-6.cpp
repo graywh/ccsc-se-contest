@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	vector<int> test, perc;
 	vector<float> test2;
 	int bagC, cont, tmp, val, cnt = 1;

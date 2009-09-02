@@ -4,7 +4,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob4.in");
+	ifstream in("prob4_in.txt");
 	char ch;
 	bool b = true;
 	while (in.get(ch))

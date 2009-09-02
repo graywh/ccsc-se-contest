@@ -5,7 +5,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob4.in");
+	ifstream in("prob4_in.txt");
 	int dim;
 	while (in >> dim)
 	{

@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	string st;
 	char tmp;
 	stack<char> mem;

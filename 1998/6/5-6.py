@@ -2,7 +2,7 @@
 
 mos = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-fin = file("prob6.in", "r")
+fin = file("prob6_in.txt", "r")
 while 1:
     line = fin.readline()
     if line == "":

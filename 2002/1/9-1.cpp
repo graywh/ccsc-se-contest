@@ -4,7 +4,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob1.in");
+	ifstream in("prob1_in.txt");
 	int sum, a, b, c, N, tmp;
 	char dud;
 	while (in >> a >> dud >> b >> dud >> c >> dud >> N)

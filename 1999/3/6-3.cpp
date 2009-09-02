@@ -75,7 +75,7 @@ public:
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	int cnt = 1;
 	PTree t;
 	while (!in.eof())

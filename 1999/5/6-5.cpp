@@ -6,7 +6,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	stack<int> incoming, newstack;
 	vector< stack<int> > holds;
 	int num, cnt, train = 0, tmp, out;

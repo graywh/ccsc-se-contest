@@ -69,7 +69,7 @@ def dumpGrid(grid, dimR, dimC):
                 print "0",
         print
 
-fin = file("prob1.in", "r")
+fin = file("prob1_in.txt", "r")
 cnt = 1
 while 1:
     line = fin.readline()

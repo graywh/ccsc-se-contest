@@ -26,4 +26,4 @@ def prnt(x):
     for i in x:
         sys.stdout.write(i)
 
-splt(file("prob2.in"))
+splt(file("prob2_in.txt"))

@@ -26,7 +26,7 @@ interval = {"second":1,
 notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
 change = [2, 2, 1, 2, 2, 2]
 
-fin = file("prob4.in", "r")
+fin = file("prob4_in.txt", "r")
 while 1:
     line = fin.readline()
     if line == "":

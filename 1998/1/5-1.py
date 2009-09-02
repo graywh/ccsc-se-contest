@@ -13,7 +13,7 @@ def match(name = "", n = 1, names = [], bill = []):
         for i in xrange(len(bill[n - 1].child)):
             match(name, bill[n - 1].child[i], names, bill)
 
-fin = file("prob1.in", "r")
+fin = file("prob1_in.txt", "r")
 cnt = 1
 while 1:
     line = fin.readline()

@@ -74,7 +74,7 @@ void main()
 	table.push_back(Domino(5,5));	table.push_back(Domino(5,6));
 	table.push_back(Domino(6,6));
 	
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	int gridnumber = 1;
 
 	while ((char)in.peek() != -1)

@@ -21,7 +21,7 @@ int getHund(int n)
 
 void main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	int cnt = 1;
 	while (!in.eof())
 	{

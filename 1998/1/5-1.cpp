@@ -28,7 +28,7 @@ void match(string name, int n)
 
 void main()
 {
-	ifstream in("prob1.in");
+	ifstream in("prob1_in.txt");
 	int num, m, p, cnt = 1;
 	char v, s;
 	bool full, part;

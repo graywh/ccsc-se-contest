@@ -5,7 +5,7 @@ using namespace std;
 void main()
 {
 	int a, b, sum;
-	ifstream in("prob1.in");
+	ifstream in("prob1_in.txt");
 	while (in >> a >> b)
 	{
 		cout << a << " x " << b << " = ";

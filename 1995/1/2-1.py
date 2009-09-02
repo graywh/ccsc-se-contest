@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-for line in file('prob1.in', 'r'):
+for line in file('prob1_in.txt', 'r'):
     a,b = map(int, line.split())
     print "%s X %s =" % (a,b),
     sum = 0

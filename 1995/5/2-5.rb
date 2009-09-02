@@ -13,7 +13,7 @@ def getHund(n)
 end
 
 count = 1
-File.readlines('prob5.in').each_slice(2) do |act, line|
+File.readlines('prob5_in.txt').each_slice(2) do |act, line|
   act.strip!
   line.strip!
   print "Message #{count} (#{act}d): "

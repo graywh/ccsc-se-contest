@@ -7,7 +7,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 	string line;
 	vector<int> tasks;
 	int sum1, sum2;

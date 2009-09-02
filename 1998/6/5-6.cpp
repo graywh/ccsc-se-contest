@@ -6,7 +6,7 @@ int mos[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 void main()
 {
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	int tmp, day, month, year;
 	while (in >> tmp)
 	{

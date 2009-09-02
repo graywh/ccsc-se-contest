@@ -29,7 +29,7 @@ void pick(int last, int sum, int cnt)
 
 void main()
 {
-	ifstream in("prob6.in");
+	ifstream in("prob6_in.txt");
 	int cnt = 1, n, tmp;
 	while (in >> caproom >> n)
 	{

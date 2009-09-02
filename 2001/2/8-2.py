@@ -25,7 +25,7 @@ class Point:
 def isValid(p, dim):
     return p.row > 0 and p.row <= dim and p.col > 0 and p.col <= dim
 
-fin = file("prob2.in")
+fin = file("prob2_in.txt")
 UP = Point(-1, 0)
 DOWN = Point(1, 0)
 LEFT = Point(0, -1)

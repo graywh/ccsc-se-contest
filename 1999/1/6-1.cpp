@@ -34,7 +34,7 @@ void dumpGrid(vector< vector<char> >& grid)
 
 void main()
 {
-	ifstream in("prob1.in");
+	ifstream in("prob1_in.txt");
 	int cnt = 1;
 	while (in >> dimR >> dimC)
 	{

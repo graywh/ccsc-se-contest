@@ -14,7 +14,7 @@ x = {
     '-.--':'Y', '--..':'Z', '*'   :' '
 }
 
-fin = file("prob2.in", "r")
+fin = file("prob2_in.txt", "r")
 while 1:
     line = fin.readline()
     if line == "":

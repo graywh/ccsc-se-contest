@@ -21,7 +21,7 @@ struct WoodChuck
 
 void main()
 {
-	ifstream in("prob3.in");
+	ifstream in("prob3_in.txt");
 	vector<WoodChuck> wc;
 	string name;
 	int tooth;

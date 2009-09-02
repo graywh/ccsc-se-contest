@@ -8,7 +8,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob4.in");
+	ifstream in("prob4_in.txt");
 	string name;
 	map<int,int> points;
 	points[0] = 500;

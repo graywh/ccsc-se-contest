@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 
-ifstream in("frog.in");
+ifstream in("frog_in.txt");
 
 int countF()
 {

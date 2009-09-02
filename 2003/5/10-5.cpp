@@ -35,7 +35,7 @@ void main()
 	int yr, x, y;
 	vector< vector<char> > tmp(20, vector<char> (20));
 	vector< vector<char> > ary(20, vector<char> (20, 'X'));
-	ifstream in("prob5.in");
+	ifstream in("prob5_in.txt");
 
 	in >> yr;
 	while (in >> x >> y)

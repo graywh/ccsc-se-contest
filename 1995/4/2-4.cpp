@@ -8,7 +8,7 @@ void main()
 {
 	string ary = "0000000", chk = "1000001";
 	int cnt;
-	ifstream in("prob4.in");
+	ifstream in("prob4_in.txt");
 	for (int i = 0; i < 6; i++)
 		in >> ary[i];
 	while (in >> ary[6])

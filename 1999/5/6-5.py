@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 train = 1
-for line in file('prob5.in', 'r').read().splitlines():
+for line in file('prob5_in.txt', 'r').read().splitlines():
     ln = map(int, line.split())
     cnt = ln[0]
     num = ln[1]

@@ -8,7 +8,7 @@ class Point:
 def distance(a, b):
     return ((a.x - b.x) ** 2 + (a.y - b.y) ** 2) ** 0.5
 
-fin = file("prob5.in")
+fin = file("prob5_in.txt")
 cnt = 1
 while 1:
     line = fin.readline()

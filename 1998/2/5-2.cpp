@@ -16,7 +16,7 @@ void clear(int x, int y)
 
 void main()
 {
-	ifstream in("prob2.in");
+	ifstream in("prob2_in.txt");
 	int dim, targets = 0;
 	char ch;
 	in >> dim;

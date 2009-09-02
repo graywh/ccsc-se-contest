@@ -11,7 +11,7 @@ def getHund(n):
 
 import sys
 
-fin = file("prob5.in", "r")
+fin = file("prob5_in.txt", "r")
 cnt = 1
 while 1:
     act = fin.readline()

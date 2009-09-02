@@ -4,7 +4,7 @@ using namespace std;
 
 void main()
 {
-	ifstream in("prob1.in");
+	ifstream in("prob1_in.txt");
 	int lines;
 	char ch;
 	bool mov = true;

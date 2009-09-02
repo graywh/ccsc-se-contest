@@ -32,7 +32,7 @@ string binar(int n)
 
 void main()
 {
-	ifstream in("prob2.in");
+	ifstream in("prob2_in.txt");
 	int num, n1, n2;
 	string h1, h2;
 	char op;
