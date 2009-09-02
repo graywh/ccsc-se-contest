@@ -14,9 +14,7 @@ x = {
     '-.--':'Y', '--..':'Z', '*'   :' '
 }
 
-fin = file("prob2_in.txt", "r")
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     if line[-1] == "\n":

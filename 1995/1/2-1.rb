@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-File.readlines('prob1_in.txt').each do |line|
+STDIN.readlines.each do |line|
   a,b = line.split().collect { |n| n.to_i }
   print "#{a} * #{b} = "
   sum = 0

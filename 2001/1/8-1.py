@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
-fin = file("prob1_in.txt", "r")
-while 1:
-    line = fin.readline()
+import sys
+
+for line in sys.stdin:
     if line == "":
         break
     line = line.split()

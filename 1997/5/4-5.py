@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-for line in file("prob5_in.txt"):
+import sys
+
+for line in sys.stdin:
     mono = True
     up = line[0] < line[1]
     for i in xrange(len(line) - 1):

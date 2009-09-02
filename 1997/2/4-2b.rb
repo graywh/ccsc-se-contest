@@ -12,7 +12,7 @@ MORSE = {
     '-.--' => 'Y', '--..' => 'Z', '*'    => ' '
 }
 
-File.readlines('prob2_in.txt').each do |line|
+STDIN.readlines.each do |line|
   line.strip.gsub('   ', ' * ').split.each do |code|
     print MORSE[code]
   end

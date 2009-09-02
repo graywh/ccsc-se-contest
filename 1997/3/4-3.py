@@ -17,6 +17,6 @@ def prnt(x):
     for i in x:
         print i.name, "the woodchuck can chuck", i.tooth * 5, "kilograms of wood."
 
-wc = list(bld(file("prob3_in.txt")))
+wc = list(bld(sys.stdin))
 wc.sort()
 prnt(wc)

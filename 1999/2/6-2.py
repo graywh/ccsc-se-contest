@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-for line in file('prob2_in.txt', 'r').read().splitlines():
+import sys
+
+for line in sys.stdin.read().splitlines():
     numcoins = int(line)
     p1 = []
     p2 = []

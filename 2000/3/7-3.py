@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-fin = file("prob3_in.txt", "r")
+import sys
+
 ln = 1
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     if line[-1] == "\n":

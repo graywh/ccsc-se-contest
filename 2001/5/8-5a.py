@@ -18,9 +18,7 @@ def parse(line):
         sys.stdout.write(")")
     return line
 
-fin = file("prob5_in.txt")
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     line = parse(line)

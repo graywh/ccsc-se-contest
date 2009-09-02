@@ -3,7 +3,7 @@
 TRASH = /([,.!?:;\n])\Z/
 SWAP = /\A(.*)([TtKkWwSs]h|[Tt]r|[Ff]l)\Z/
 
-File.readlines('pig.dat').each do |line|
+STDIN.readlines.each do |line|
   line.split.each do |word|
     word = word.gsub(TRASH, '')
     ending = $1.nil? ? '' : $1

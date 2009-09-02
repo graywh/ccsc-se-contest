@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 
-fin = file("prob3_in.txt", "r")
+import sys
+
 channel = 1
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     line = line.split()
@@ -15,5 +15,5 @@ while 1:
         for j in xrange(i):
             if ary[i] < ary[j]:
                 cross += 1
-    print "There are %s wire crossins in routing channel %s." % (cross, channel)
+    print "There are %s wire crossings in routing channel %s." % (cross, channel)
     channel += 1

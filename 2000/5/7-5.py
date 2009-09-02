@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 class Point:
     def __init__(self):
         self.x = 0.0
@@ -8,17 +10,16 @@ class Point:
 def distance(a, b):
     return ((a.x - b.x) ** 2 + (a.y - b.y) ** 2) ** 0.5
 
-fin = file("prob5_in.txt")
 cnt = 1
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     ships = line.split()
     ships = int(ships[0])
     plot = []
     for i in xrange(ships):
-        line = fin.readline()
+        line = sys.stdin.readline()
         line = map(float, line.split())
         pt = Point()
         pt.x = line[0]

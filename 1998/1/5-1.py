@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 class Node:
     def __init__(self, v = " "):
         self.val = v
@@ -13,10 +15,9 @@ def match(name = "", n = 1, names = [], bill = []):
         for i in xrange(len(bill[n - 1].child)):
             match(name, bill[n - 1].child[i], names, bill)
 
-fin = file("prob1_in.txt", "r")
 cnt = 1
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     if line[-1] == "\n":
@@ -28,7 +29,7 @@ while 1:
     bill = [None] * num
     bill[0] = Node(v)
     for i in xrange(m):
-        line = fin.readline()
+        line = sys.stdin.readline()
         p, num, s, v = line.split()
         p = int(p)
         num = int(num)

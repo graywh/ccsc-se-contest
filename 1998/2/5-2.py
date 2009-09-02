@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 def clear(grid, dim, x, y):
     grid[x][y] = 0
     for i in xrange(-1,2):
@@ -7,10 +9,9 @@ def clear(grid, dim, x, y):
             if x+i in dim and y+j in dim and grid[x+i][y+j]:
                 clear(grid, dim, x + i, y + j)
 
-fin = file("prob2_in.txt", "r")
 targets = 0
-dim = xrange(int(fin.readline()))
-grid = map(lambda x: map(int, x), map(list, fin.read().splitlines()))
+dim = xrange(int(sys.stdin.readline()))
+grid = map(lambda x: map(int, x), map(list, sys.stdin.read().splitlines()))
 for i in dim:
     for j in dim:
         if grid[i][j]:

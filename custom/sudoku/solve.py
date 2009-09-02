@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 def recursive(data, index, count):
     if index == 81:
         print 'Solution %s:' % (count + 1)
@@ -51,8 +53,6 @@ def validSub(data, index):
             results.append(data[(sub / 9) + (i / 3)][(sub % 9) + (i % 3)])
     return True
 
-fin = file('puzzle.txt', 'r')
-
 while True:
     data = [
             [0,0,0,0,0,0,0,0,0],
@@ -65,12 +65,12 @@ while True:
             [0,0,0,0,0,0,0,0,0],
             [0,0,0,0,0,0,0,0,0]
             ]
-    line = fin.readline().strip()
+    line = sys.stdin.readline().strip()
     if line == "" or line is None:
         break
     data[0] = map(int, line)
     for i in xrange(1,9):
-        line = fin.readline().strip()
+        line = sys.stdin.readline().strip()
         data[i] = map(int, line)
 
     testIndex = 0
@@ -83,5 +83,3 @@ while True:
     print
     print '%s solutions found' % (count)
     print
-
-fin.close()

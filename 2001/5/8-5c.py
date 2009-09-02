@@ -17,9 +17,7 @@ def oper(pos, pre):
     sys.stdout.write(")")
     return q + 2
 
-fin = file("prob5_in.txt")
-while 1:
-    pre = fin.readline()
+for pre in sys.stdin:
     if pre == "":
         break
     if ord(pre[0]) >= ord('0') and ord(pre[0]) <= ord('9'):

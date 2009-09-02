@@ -14,7 +14,7 @@ class WoodChuck
 end
 
 list = []
-File.readlines('prob3_in.txt').each do |line|
+STDIN.readlines.each do |line|
   n,t = line.split()
   list << WoodChuck.new(n, t)
 end

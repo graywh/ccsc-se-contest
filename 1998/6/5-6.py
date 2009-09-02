@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 
+import sys
+
 mos = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
-fin = file("prob6_in.txt", "r")
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
+    line = line.strip()
     if line == "":
         break
     ln = line.split()

@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 
-for line in file('prob1_in.txt', 'r'):
+import sys
+
+for line in sys.stdin:
     a,b = map(int, line.split())
     print "%s X %s =" % (a,b),
     sum = 0

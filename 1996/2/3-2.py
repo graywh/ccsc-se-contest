@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 daysInMonth = (31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31)
 days = ("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
 
@@ -15,10 +17,8 @@ def validDay(mm, dd, yyyy):
 def valid(mm, dd, yyyy):
     return ((mm > 0) and (mm <= 12) and (dd > 0) and (dd <= validDay(mm, dd, yyyy)) and (yyyy > 0))
 
-fin = file("prob2_in.txt", "r")
-while 1:
+for line in sys.stdin:
     dp, dd, mm, yyyy = 0, 0, 0, 0
-    line = fin.readline()
     if line == "":
         break
     if line[-1] == "\n":

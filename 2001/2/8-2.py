@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 class Point:
     def __init__(self, r = 0, c = 0, p = None):
         self.row = r
@@ -25,20 +27,19 @@ class Point:
 def isValid(p, dim):
     return p.row > 0 and p.row <= dim and p.col > 0 and p.col <= dim
 
-fin = file("prob2_in.txt")
 UP = Point(-1, 0)
 DOWN = Point(1, 0)
 LEFT = Point(0, -1)
 RIGHT = Point(0, 1)
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     line = line.split()
     gridDim = int(line[0])
-    line = fin.readline().split()
+    line = sys.stdin.readline().split()
     start = Point(int(line[0]), int(line[1]))
-    line = fin.readline().split()
+    line = sys.stdin.readline().split()
     end = Point(int(line[0]), int(line[1]))
     cnt = 0
     complete = 0
@@ -46,7 +47,7 @@ while 1:
     visit = []
     grid = []
     for i in xrange(gridDim):
-        line = fin.readline().split()
+        line = sys.stdin.readline().split()
         ln = []
         for i in xrange(gridDim):
             ln.append(int(line[i]))

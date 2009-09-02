@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 class PTree:
     class Node:
         def __init__(self, d):
@@ -7,10 +9,10 @@ class PTree:
             self.left = None
             self.right = None
 
-    def __init__(self, fin):
+    def __init__(self, line):
         self.isPalin = 0
         self.pal = ''
-        self.root = self.create(fin)
+        self.root = self.create(line)
         s = ''
         self.traverseAll(self.root, s)
 
@@ -20,15 +22,15 @@ class PTree:
     def getPal(self):
         return self.pal
 
-    def create(self, fin):
-        fin.pop(0)
-        ch = fin.pop(0)
+    def create(self, line):
+        line.pop(0)
+        ch = line.pop(0)
         if ch == ')':
             return None
         tmp = PTree.Node(ch)
-        tmp.left = self.create(fin)
-        tmp.right = self.create(fin)
-        fin.pop(0)
+        tmp.left = self.create(line)
+        tmp.right = self.create(line)
+        line.pop(0)
         return tmp
 
     def traverseAll(self, n, s):
@@ -49,7 +51,7 @@ class PTree:
         return 1
 
 cnt = 1
-for line in file('prob3_in.txt', 'r').read().splitlines():
+for line in sys.stdin.read().splitlines():
     line = list(line)
     t = PTree(line)
     print "Tree %s is" % cnt,

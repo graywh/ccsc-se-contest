@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
+import sys
+
 symbols = ("&", ".", ",", ":", ";", "?", "!", "-", "(", ")")
 
 cnt = 0
-for line in file("prob3_in.txt"):
+for line in sys.stdin:
     for symbol in symbols:
         line = line.replace(symbol, "")
     cnt += len(line.split())

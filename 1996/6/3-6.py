@@ -1,11 +1,11 @@
 #!/usr/bin/env python
 
+import sys
+
 trash = [",", ".", "!", "?", "\n", ":", ";"]
 swap = ["Th", "Kh", "Wh", "Tr", "Sh", "Fl", "th", "kh", "wh", "tr", "sh", "fl"]
 
-fin = file("prob6_in.txt")
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     words = line.split()

@@ -1,19 +1,20 @@
 #!/usr/bin/env python
 
+import sys
+
 days = [31,28,31,30,31,30,31,31,30,31,30,31]
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
-fin = file("prob2_in.txt", "r")
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     if line == "From veep@whitehouse.gov\n":
-        line = fin.readline()
+        line = sys.stdin.readline()
         if line == "To buddha@whitehouse.gov\n":
             days[1] = 28
             dd = 0
-            line = fin.readline()
+            line = sys.stdin.readline()
             ln = line.split()
             day = ln[1]
             month = ln[2]

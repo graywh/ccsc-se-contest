@@ -19,7 +19,7 @@ def valid(m, d, y)
   ((m > 0) and (m <= 12) and (d > 0) and (d <= validDay(m, d, y)) and (y > 0))
 end
 
-File.readlines('dates.dat').each do |line|
+STDIN.readlines.each do |line|
   m, d, y = line.strip.split('/').collect { |x| x.to_i }
   if not valid(m, d, y)
     puts "Invalid date in the input."

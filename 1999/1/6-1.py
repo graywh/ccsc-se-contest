@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 def moveRight(grid, r, c, dimR, dimC, pathFound):
     grid[r][c] = 'A'
     if ((r == dimR - 1) and (c == dimC - 1)):
@@ -69,10 +71,9 @@ def dumpGrid(grid, dimR, dimC):
                 print "0",
         print
 
-fin = file("prob1_in.txt", "r")
 cnt = 1
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     dimR, dimC = line.split()
@@ -80,7 +81,7 @@ while 1:
     dimC = int(dimC)
     grid = [0] * dimR
     for i in xrange(dimR):
-        line = fin.readline()
+        line = sys.stdin.readline()
         ln = [0] * dimC
         for j in xrange(dimC):
             ln[j] = line[j]

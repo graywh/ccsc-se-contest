@@ -2,11 +2,9 @@
 
 import sys
 
-fin = file("prob5_in.txt")
 mem = []
 extra = 0
-while 1:
-    line = fin.readline()
+for line in sys.stdin:
     if line == "":
         break
     if line[-1] == "\n":

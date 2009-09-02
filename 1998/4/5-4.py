@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 conv = {"B#":"C",
         "C#":"Db",
         "D#":"Eb",
@@ -26,13 +28,12 @@ interval = {"second":1,
 notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
 change = [2, 2, 1, 2, 2, 2]
 
-fin = file("prob4_in.txt", "r")
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     keyn = line.split()
-    line = fin.readline()
+    line = sys.stdin.readline()
     keyn = keyn[0]
     print "Key of %s:" % keyn,
     if len(keyn) > 1 and keyn[1] == "#":

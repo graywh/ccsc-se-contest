@@ -1,18 +1,17 @@
 #!/usr/bin/env python
 
-import datetime, calendar
+import sys, datetime, calendar
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
-fin = file('prob2_in.txt', 'r')
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == '':
         break
     if line == 'From veep@whitehouse.gov\n':
-        line = fin.readline()
+        line = sys.stdin.readline()
         if line == 'To buddha@whitehouse.gov\n':
-            line = fin.readline().split(' ')
+            line = sys.stdin.readline().split()
             dow = line[1]
             day = datetime.date(int(line[4]), months.index(line[2])+1, int(line[3][:-1]))
             newday = day + datetime.timedelta(days=28)

@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 def getOne(n):
     return n % 10
 
@@ -9,15 +11,12 @@ def getTen(n):
 def getHund(n):
     return n / 100
 
-import sys
-
-fin = file("prob5_in.txt", "r")
 cnt = 1
 while 1:
-    act = fin.readline()
+    act = sys.stdin.readline()
     if act == "":
         break
-    line = fin.readline()
+    line = sys.stdin.readline()
     if act[-1] == "\n":
         act = act[:-1]
     if line[-1] == "\n":

@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+import sys
+
 cnt = 1
-for line in file('prob6_in.txt', 'r').read().splitlines():
+for line in sys.stdin.read().splitlines():
     line = map(int, line.split())
     caproom = line[0]
     n = line[1]

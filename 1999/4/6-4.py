@@ -1,8 +1,9 @@
 #!/usr/bin/env python
 
-fin = file("prob4_in.txt", "r")
+import sys
+
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     dim = int(line.split()[0])
@@ -10,7 +11,7 @@ while 1:
     magic = 1
     grid = []
     for i in xrange(dim):
-        g = map(int, fin.readline().split())
+        g = map(int, sys.stdin.readline().split())
         g.append(0)
         grid.append(g)
     grid.append([0] * (dim + 1))

@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
-fin = file("prob4_in.txt")
+import sys
+
 msg = 1
 while 1:
-    line = fin.readline()
+    line = sys.stdin.readline()
     if line == "":
         break
     if line[-1] == "\n":
@@ -11,7 +12,7 @@ while 1:
     rows,cols = map(int, line.split())
     ary = []
     for i in xrange(rows):
-        ary.append(fin.readline().split())
+        ary.append(sys.stdin.readline().split())
     print "Message", msg, "=>",
     j = cols - 1
     for i in xrange(rows):
