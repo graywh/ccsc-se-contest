@@ -4,7 +4,7 @@ import sys
 
 points = {0:500, 1:300, 2:250, 3:200, 4:150, 5:100, 6:75, 7:50, 8:25, 9:10, 10:0}
 
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == "":
         break

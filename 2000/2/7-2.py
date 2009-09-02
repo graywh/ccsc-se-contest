@@ -5,7 +5,7 @@ import sys
 days = [31,28,31,30,31,30,31,31,30,31,30,31]
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == "":
         break

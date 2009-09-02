@@ -16,7 +16,7 @@ def match(name = "", n = 1, names = [], bill = []):
             match(name, bill[n - 1].child[i], names, bill)
 
 cnt = 1
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == "":
         break

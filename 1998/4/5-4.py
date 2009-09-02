@@ -28,7 +28,7 @@ interval = {"second":1,
 notes = ["C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"]
 change = [2, 2, 1, 2, 2, 2]
 
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == "":
         break
@@ -47,7 +47,7 @@ while 1:
     for j in xrange(6):
         i = (i + change[j]) % 12
         key.append(notes[i])
-    while 1:
+    while True:
         if line == "":
             break
         unpack = line.split(None,3)

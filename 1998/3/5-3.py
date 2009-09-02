@@ -14,7 +14,7 @@ for line in sys.stdin.read().splitlines():
         print "ERROR"
         continue
     else:
-        while 1:
+        while True:
             l = ((z * l + i ) % m)
             cnt += 1
             if start == l:

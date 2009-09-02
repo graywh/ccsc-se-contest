@@ -12,7 +12,7 @@ def getHund(n):
     return n / 100
 
 cnt = 1
-while 1:
+while True:
     act = sys.stdin.readline()
     if act == "":
         break

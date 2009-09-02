@@ -31,7 +31,7 @@ UP = Point(-1, 0)
 DOWN = Point(1, 0)
 LEFT = Point(0, -1)
 RIGHT = Point(0, 1)
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == "":
         break

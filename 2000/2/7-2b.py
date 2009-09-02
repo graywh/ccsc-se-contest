@@ -4,7 +4,7 @@ import sys, datetime, calendar
 
 months = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
-while 1:
+while True:
     line = sys.stdin.readline()
     if line == '':
         break
