@@ -24,9 +24,9 @@ int main()
 			ary.push_back(tvec);
 			tvec.clear();
 		}
-		
+
 		cout << "Message " << msg << " => ";
-		
+
 		int j = cols - 1;
 		for (int i = 0; i < rows; i++)
 		{
@@ -37,7 +37,7 @@ int main()
 		}
 		cout << endl;
 		msg++;
-		
+
 		for (int i = 0; i < rows; i++)
 			ary[i].clear();
 		ary.clear();

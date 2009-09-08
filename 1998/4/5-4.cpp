@@ -16,7 +16,7 @@ int main()
 	map<string, int> interval;
 	string notes[] = {"C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab", "A", "Bb", "B"};
 	int change[] = {2, 2, 1, 2, 2, 2};
-	
+
 	conv["B#"] = "C";
 	conv["C#"] = "Db";
 	conv["D#"] = "Eb";
@@ -31,7 +31,7 @@ int main()
 	conv["Fb"] = "E";
 	conv["Gb"] = "F#";
 	conv["Ab"] = "G#";
-	
+
 	interval["second"] = 1;
 	interval["third"] = 2;
 	interval["fourth"] = 3;
@@ -39,7 +39,7 @@ int main()
 	interval["sixth"] = 5;
 	interval["seventh"] = 6;
 	interval["octave"] = 0;
-	
+
 	while (in >> keyn)
 	{
 		first = true;

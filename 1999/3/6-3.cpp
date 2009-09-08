@@ -12,11 +12,11 @@ private:
 		Node* left, * right;
 		Node(char d) : data(d), right(NULL), left(NULL) {}
 	};
-	
+
 	Node* root;
 	bool isPalin;
 	string pal;
-	
+
 	Node* create(ifstream& in)
 	{
 		Node* tmp;
@@ -30,7 +30,7 @@ private:
 		in >> dummy;
 		return tmp;
 	}
-	
+
 	void traverseAll(Node* n, string s)
 	{
 		s.push_back(n->data);
@@ -43,7 +43,7 @@ private:
 		if ((n->right != NULL) && !isPalin)
 			traverseAll(n->right, s);
 	}
-	
+
 	bool isPalindrome(string s)
 	{
 		for (unsigned i = 0; i < (s.size() - i); i++)
@@ -61,12 +61,12 @@ public:
 		traverseAll(root, s);
 		return true;
 	}
-	
+
 	bool isPal()
 	{
 		return isPalin;
 	}
-	
+
 	string getPal()
 	{
 		return pal;

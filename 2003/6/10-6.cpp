@@ -9,7 +9,7 @@ public:
 	vector< vector<char> > g;
 	int x, y;
 	bool pd;
-	
+
 	void Move(int d, int l, bool ps)
 	{
 		pd = ps;

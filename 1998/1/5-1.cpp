@@ -9,7 +9,7 @@ struct Node
 {
 	char val;
 	vector<int> child;
-	
+
 	Node(char v = ' ') : val(v){}
 };
 

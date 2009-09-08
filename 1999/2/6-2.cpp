@@ -34,4 +34,4 @@ int main()
 			cout << p2[i] << ((i == p2.size() - 1) ? " ":", ");
 		cout << "with value " << sum2 << "." << endl;
 	}
-}  
+}

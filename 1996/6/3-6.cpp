@@ -8,7 +8,7 @@ int main()
 	ifstream in("pig.dat");
 	char ch;
 	string word, tmp, tmp2;
-	
+
 	while (in >> word)
 	{
 		ch = word.at(word.length() - 1);

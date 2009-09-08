@@ -27,7 +27,7 @@ int findSolutions(vector< vector<int> >& grid, vector< vector<int> >& map, int d
   		cout << endl;
   		return 1;
 	}
-	
+
 	for (int r = 0; r < 7; r++)
 		for (int c = 1; c < 8; c++)
 			if (((grid[r][c - 1] == table[dom].side1 && grid[r][c] == table[dom].side2) ||
@@ -49,7 +49,7 @@ int findSolutions(vector< vector<int> >& grid, vector< vector<int> >& map, int d
 				num += findSolutions(grid, map, dom+1);
 				map[r - 1][c] = map[r][c] = -1;
    			}
-   	
+
    	return num;
 }
 
@@ -73,7 +73,7 @@ int main()
 	table.push_back(Domino(4,5));	table.push_back(Domino(4,6));
 	table.push_back(Domino(5,5));	table.push_back(Domino(5,6));
 	table.push_back(Domino(6,6));
-	
+
 	ifstream in("prob6_in.txt");
 	int gridnumber = 1;
 
@@ -83,7 +83,7 @@ int main()
 			for (int c = 0; c < 8; c++)
 				in >> grid[r][c];
 		in.ignore(100, '\n');
-		
+
 		cout << "Grid #" << gridnumber << ":" << endl << endl;
 		for (int r = 0; r < 7; r++)
 		{

@@ -11,7 +11,7 @@ int main()
 	string str;
 	char ch;
 	map<string, char> x;
-	
+
 	x[".-"] = 'A';
 	x["-..."] = 'B';
 	x["-.-."] = 'C';
@@ -38,7 +38,7 @@ int main()
 	x["-..-"] = 'X';
 	x["-.--"] = 'Y';
 	x["--.."] = 'Z';
-	
+
 	while (in >> str)
 	{
 		ch = x[str];

@@ -9,10 +9,10 @@ struct WoodChuck
 {
 	string name;
 	int tooth;
-	
+
 	WoodChuck(string n, int t) : name(n), tooth(t)
 	{}
-	
+
 	bool operator < (WoodChuck& wc)
 	{
 		return (tooth < wc.tooth);

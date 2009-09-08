@@ -8,28 +8,28 @@ using namespace std;
 struct Point
 {
 	int row, col;
-	
+
 	Point(int r = 0, int c = 0) : row(r), col(c)
 	{}
-	
+
 	Point(const Point& p) : row(p.row), col(p.col)
 	{}
-	
+
 	Point operator +(Point p)
 	{
 		return Point(row + p.row, col + p.col);
 	}
-	
+
 	bool operator ==(Point p)
 	{
 		return ((row == p.row) && (col == p.col));
 	}
-	
+
 	bool operator <(Point p)
 	{
 		return ((row < p.row) || (col < p.col));
 	}
-	
+
 	friend ostream& operator <<(ostream& out, Point p)
 	{
 		out << "row: " << p.row << ", col: " << p.col;

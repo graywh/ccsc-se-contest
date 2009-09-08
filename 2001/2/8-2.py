@@ -20,7 +20,7 @@ class Point:
 
     def __add__(self, p):
         return Point(self.row + p.row, self.col + p.col)
-        
+
     def __str__(self):
         return "(%s, %s)" % (self.row, self.col)
 
