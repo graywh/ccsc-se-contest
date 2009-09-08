@@ -53,7 +53,7 @@ int findSolutions(vector< vector<int> >& grid, vector< vector<int> >& map, int d
    	return num;
 }
 
-void main()
+int main()
 {
 	vector< vector<int> > grid(7, vector<int>(8));
 	vector< vector<int> > map(7, vector<int>(8, -1));

@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob6_in.txt");
 	int caproom, cnt = 1, n, tmp;

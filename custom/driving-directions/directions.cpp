@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("directions.txt");
 	int steps;

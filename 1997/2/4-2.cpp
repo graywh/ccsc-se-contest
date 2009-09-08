@@ -5,7 +5,7 @@
 #include <map>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	string str;

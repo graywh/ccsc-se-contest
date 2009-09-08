@@ -72,7 +72,7 @@ void findQueen(vector<int>& g, int dim, int q)
 	return;
 }
 
-void main()
+int main()
 {
 	int dim;
 	ifstream in("queens.dat");

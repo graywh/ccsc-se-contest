@@ -26,7 +26,7 @@ void match(string name, int n)
 			match(name, bill[n - 1].child[i]);
 }
 
-void main()
+int main()
 {
 	ifstream in("prob1_in.txt");
 	int num, m, p, cnt = 1;

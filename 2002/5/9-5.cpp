@@ -1,17 +1,15 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
-void main()
+int main()
 {
-	ifstream in("prob5_in.txt");
 	string line;
 	vector<int> tasks;
 	int sum1, sum2;
-	while (getline(in, line))
+	while (getline(cin, line))
 	{
 		if (line.empty())
 		{

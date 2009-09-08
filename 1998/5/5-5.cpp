@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void main()
+int main()
 {
 	int sum = 0, cnt = 0, num = 6, dig = 0;
 	cout << "Perfect Number    Number of Digits" << endl

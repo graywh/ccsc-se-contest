@@ -30,7 +30,7 @@ string binar(int n)
 	return b;
 }
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	int num, n1, n2;

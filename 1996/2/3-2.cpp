@@ -26,7 +26,7 @@ int valid(long mm, long dd, long yyyy)
 	return ((mm > 0) && (mm <= 12) && (dd > 0) && (dd <= validDay(mm, dd, yyyy)) && (yyyy > 0));
 }
 
-void main()
+int main()
 {
 	ifstream in("dates.dat");
 	long mm, dd, yyyy, dp;

@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("words.txt");
 	char ch, tc;

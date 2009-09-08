@@ -53,7 +53,7 @@ bool isComp(vector<int> vs)
 	return (vs == comp);
 }
 
-void main()
+int main()
 {
 	ifstream in("prob6_in.txt");
 	ifstream data("static.dat");

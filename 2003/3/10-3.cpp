@@ -4,7 +4,7 @@
 #include <map>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob3_in.txt");
 	map<int, string> conv;

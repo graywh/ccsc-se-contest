@@ -8,7 +8,7 @@ int leapdays[] = {31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 string months[] = {"January", "February", "March", "April", "May", "June", "July",
 	"August", "September", "October", "November", "December"};
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	string line, day, month, monthday, tmp;

@@ -27,7 +27,7 @@ void pick(int last, int sum, int cnt)
 		best = sum;
 }
 
-void main()
+int main()
 {
 	ifstream in("prob6_in.txt");
 	int cnt = 1, n, tmp;

@@ -16,7 +16,7 @@ double distance(Point a, Point b)
 	return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
 }
 
-void main()
+int main()
 {
 	ifstream in("prob5_in.txt");
 	int ships, n1, n2, cnt = 1;

@@ -91,7 +91,7 @@ private:
 	}
 };
 
-void main()
+int main()
 {
 	ifstream in("prob6_in.txt");
 

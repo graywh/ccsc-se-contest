@@ -4,7 +4,7 @@
 #include <cmath>
 using namespace std;
 
-void main()
+int main()
 {
 	string ary = "0000000", chk = "1000001";
 	int cnt;

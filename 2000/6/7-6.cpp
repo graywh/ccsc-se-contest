@@ -3,7 +3,7 @@
 #include <vector>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob6_in.txt");
 	vector<int> test, perc;

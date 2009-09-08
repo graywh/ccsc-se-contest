@@ -73,7 +73,7 @@ public:
 	}
 };
 
-void main()
+int main()
 {
 	ifstream in("prob3_in.txt");
 	int cnt = 1;

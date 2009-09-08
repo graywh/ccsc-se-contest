@@ -3,7 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob3_in.txt");
 	int z, i, m, l;

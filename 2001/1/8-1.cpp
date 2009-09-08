@@ -3,7 +3,7 @@
 #include <cmath>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob1_in.txt");
 	int cnt, n, tmp;

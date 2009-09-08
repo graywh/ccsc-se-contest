@@ -32,7 +32,7 @@ void dumpGrid(vector< vector<char> >& grid)
 	}
 }
 
-void main()
+int main()
 {
 	ifstream in("prob1_in.txt");
 	int cnt = 1;

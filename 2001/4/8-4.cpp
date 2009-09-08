@@ -6,7 +6,7 @@
 #include <map>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob4_in.txt");
 	string name;

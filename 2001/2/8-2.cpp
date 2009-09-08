@@ -47,7 +47,7 @@ bool isValid(Point p, int dim)
 	return ((p.row > 0) && (p.row <= dim) && (p.col > 0) && (p.col <= dim));
 }
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	set<Point> visited;

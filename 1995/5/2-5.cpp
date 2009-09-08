@@ -19,7 +19,7 @@ int getHund(int n)
 	return (n / 100);
 }
 
-void main()
+int main()
 {
 	ifstream in("prob5_in.txt");
 	int cnt = 1;

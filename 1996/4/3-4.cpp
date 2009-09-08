@@ -4,7 +4,7 @@
 #include <vector>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("buffy.dat");
 	vector< vector<string> > ary;

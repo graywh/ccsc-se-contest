@@ -2,7 +2,7 @@
 #include <fstream>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	int x, y, total, min;

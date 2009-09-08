@@ -11,7 +11,7 @@ int countF()
 	return (in.get()==EOF?0:1+countF());
 }
 
-void main()
+int main()
 {
 	cout << "Mark Twain used " << countF() << " F's in this story." << endl;
 }

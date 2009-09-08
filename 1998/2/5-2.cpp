@@ -14,7 +14,7 @@ void clear(int x, int y)
 				clear(x + i, y + j);
 }
 
-void main()
+int main()
 {
 	ifstream in("prob2_in.txt");
 	int dim, targets = 0;

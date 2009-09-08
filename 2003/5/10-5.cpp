@@ -30,7 +30,7 @@ int count(int x, int y, vector< vector<char> >& ary)
 	return cnt;
 }
 
-void main()
+int main()
 {
 	int yr, x, y;
 	vector< vector<char> > tmp(20, vector<char> (20));

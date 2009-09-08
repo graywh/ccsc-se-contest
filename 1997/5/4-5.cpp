@@ -3,7 +3,7 @@
 #include <queue>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("mono_in.txt");
 	while (!in.eof())

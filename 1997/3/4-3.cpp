@@ -19,7 +19,7 @@ struct WoodChuck
 	}
 };
 
-void main()
+int main()
 {
 	ifstream in("prob3_in.txt");
 	vector<WoodChuck> wc;
