@@ -47,9 +47,13 @@ while True:
     l, c = [int(x) for x in sys.stdin.readline().split()]
     if l == 0 and c == 0:
         break
+    if i > 1:
+        print
+    print "Dataset %s:" % i
     config = {}
     for j in xrange(l):
         k = sys.stdin.readline().split()
         config[k[0][0]] = int(k[1])
     coll, t = find(config, c)
     print "Total number of possible seating arrangements = %s" % t
+    i += 1

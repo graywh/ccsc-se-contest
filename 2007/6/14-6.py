@@ -9,28 +9,18 @@ def y(p):
     return p[1]
 
 def area(p1, p2, p3):
-    return 0.5 * (0
-            + x(p1) * y(p2)
-            + x(p2) * y(p3)
-            + x(p3) * y(p1)
-            - x(p1) * y(p3)
-            - x(p3) * y(p2)
-            - x(p2) * y(p1)
+    return 0.5 * (
+              (x(p1) * y(p2))
+            + (x(p2) * y(p3))
+            + (x(p3) * y(p1))
+            - (x(p1) * y(p3))
+            - (x(p2) * y(p1))
+            - (x(p3) * y(p2))
             )
-
-def outer(p0, p1, p2):
-    a = area(p0, p1, p2)
-    if a > 0:
-        return p1
-    elif a < 0:
-        return p2
-    else:
-        return None
 
 sys.stdin.readline()
 
-lines = sys.stdin.read().splitlines()
-points = [tuple([int(a) for a in l.split(',')]) for l in lines]
+points = [tuple([int(a) for a in l.split(',')]) for l in sys.stdin]
 
 hull = []
 p0 = points[0]

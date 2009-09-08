@@ -20,11 +20,12 @@ def pause(p, n):
     else:
         return ""
 
-for l in sys.stdin.read().splitlines()
-    if l[0] == "*":
+for l in sys.stdin:
+    l = l.strip().lower()
+    if l == "*":
         break
-    sys.stdout.write(keys[l[0].lower()])
+    sys.stdout.write(keys[l[0]])
     for i in xrange(1, len(l)):
-        sys.stdout.write(pause(l[i-1].lower(), l[i].lower()))
-        sys.stdout.write(keys[l[i].lower()])
+        sys.stdout.write(pause(l[i-1], l[i]))
+        sys.stdout.write(keys[l[i]])
     sys.stdout.write("\n")

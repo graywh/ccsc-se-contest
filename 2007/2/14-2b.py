@@ -15,7 +15,7 @@ keys = {
         }
 
 def pause(p, n):
-    if p[0] == n[0] and p != "*":
+    if keys[p][0] == keys[n][0] and keys[p] != "*":
         return "(PAUSE)"
     else:
         return ""
@@ -23,14 +23,16 @@ def pause(p, n):
 def convert(l):
     for c in l:
         yield c
+    yield ' '
 
 def reduct(a, b):
-    if a is not None:
-        sys.stdout.write(pause(a,b))
-    sys.stdout.write(b)
+    sys.stdout.write(keys[a])
+    sys.stdout.write(pause(a,b))
+    return b
 
-for l in sys.stdin.read().splitlines()
-    if l[0] == "*":
+for l in sys.stdin:
+    l = l.strip().lower()
+    if l == "*":
         break
-    reduce(reduct, convert(l), None)
+    reduce(reduct, convert(l[1:]), l[0])
     sys.stdout.write("\n")
