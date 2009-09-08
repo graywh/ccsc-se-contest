@@ -4,36 +4,36 @@ using namespace std;
 
 void parse(ifstream& in)
 {
-	char t;
-	in >> t;
-	if (!isdigit(t))
-	{
-		cout << "(";
-		parse(in);
-		cout << " " << t << " ";
-		parse(in);
-		cout << ")";
-	}
-	else
-		cout << t;
+    char t;
+    in >> t;
+    if (!isdigit(t))
+    {
+        cout << "(";
+        parse(in);
+        cout << " " << t << " ";
+        parse(in);
+        cout << ")";
+    }
+    else
+        cout << t;
 }
 
 int main()
 {
-	ifstream in("prob5_in.txt");
-	char t;
-	while (in >> t)
-	{
-		if (!isdigit(t))
-		{
-			cout << "(";
-			parse(in);
-			cout << " " << t << " ";
-			parse(in);
-			cout << ")";
-		}
-		else
-			cout << t;
-		cout << endl;
-	}
+    ifstream in("prob5_in.txt");
+    char t;
+    while (in >> t)
+    {
+        if (!isdigit(t))
+        {
+            cout << "(";
+            parse(in);
+            cout << " " << t << " ";
+            parse(in);
+            cout << ")";
+        }
+        else
+            cout << t;
+        cout << endl;
+    }
 }
