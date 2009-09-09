@@ -20,7 +20,7 @@ int oper(int pos, string prefix)
 	return q + 2;
 }
 
-void main()
+int main()
 {
 	ifstream in("prob5.in");
 	string prefix;

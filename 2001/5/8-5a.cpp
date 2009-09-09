@@ -18,7 +18,7 @@ void parse(ifstream& in)
 		cout << t;
 }
 
-void main()
+int main()
 {
 	ifstream in("prob5.in");
 	char t;
@@ -26,9 +26,11 @@ void main()
 	{
 		if (!isdigit(t))
 		{
+			cout << "(";
 			parse(in);
 			cout << " " << t << " ";
 			parse(in);
+			cout << ")";
 		}
 		else
 			cout << t;

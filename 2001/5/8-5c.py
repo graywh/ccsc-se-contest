@@ -1,18 +1,20 @@
 #!/usr/bin/env python
 
+import sys
+
 def oper(pos, pre):
     q = 0
-    print "(",
+    sys.stdout.write("(")
     if ord(pre[pos + 1 + q]) >= ord('0') and ord(pre[pos + 1 + q]) <= ord('9'):
-        print pre[pos + 1 + q],
+        sys.stdout.write(pre[pos + 1 + q])
     else:
         q += oper(pos + 1 + q, pre)
-    print pre[pos],
+    sys.stdout.write(' ' + pre[pos] + ' ')
     if ord(pre[pos + 2 + q]) >= ord('0') and ord(pre[pos + 2 + q]) <= ord('9'):
-        print pre[pos + 2 + q],
+        sys.stdout.write(pre[pos + 2 + q])
     else:
         q += oper(pos + 2 + q, pre)
-    print ")",
+    sys.stdout.write(")")
     return q + 2
 
 fin = file("prob5.in")
@@ -21,7 +23,7 @@ while 1:
     if pre == "":
         break
     if ord(pre[0]) >= ord('0') and ord(pre[0]) <= ord('9'):
-        print pre[0],
+        sys.stdout.write(pre[0])
     else:
         oper(0, pre)
     print

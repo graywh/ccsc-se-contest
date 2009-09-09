@@ -1,17 +1,21 @@
 #!/usr/bin/env python
 
+import sys
+
 def parse(line):
     ch = line[0]
     line = line[1:]
     d = ord(ch)
     if d >= ord('0') and d <= ord('9'):
-        print ch,
+        sys.stdout.write(ch)
     else:
-        print "(",
+        sys.stdout.write("(")
         line = parse(line)
-        print ch,
+        sys.stdout.write(' ')
+        sys.stdout.write(ch)
+        sys.stdout.write(' ')
         line = parse(line)
-        print ")",
+        sys.stdout.write(")")
     return line
 
 fin = file("prob5.in")

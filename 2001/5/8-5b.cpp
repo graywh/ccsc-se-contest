@@ -4,7 +4,7 @@
 #include <stack>
 using namespace std;
 
-void main()
+int main()
 {
 	ifstream in("prob5.in");
 	string st;

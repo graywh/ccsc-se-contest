@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+import sys
+
 fin = file("prob5.in")
 mem = []
 extra = 0
@@ -16,17 +18,17 @@ while 1:
             cont -= 1
             continue
         if ord(ch) >= ord('0') and ord(ch) <= ord('9'):
-            print ch,
+            sys.stdout.write(ch)
             while len(mem) and ord(line[i + 1]) >= ord('0') and ord(line[i + 1]) <= ord('9'):
-                print mem.pop(0),line[i + 1],")",
+                sys.stdout.write(' ' + mem.pop(0) + ' ' + line[i + 1] + ")")
                 i += 1
                 cont += 1
             if len(mem) and i < len(line):
-                print mem.pop(0),
+                sys.stdout.write(mem.pop(0))
                 extra += 1
         else:
-            print "(",
+            sys.stdout.write("(")
             mem.append(ch)
     for i in xrange(extra):
-        print ")",
+        sys.stdout.write(")")
     print
