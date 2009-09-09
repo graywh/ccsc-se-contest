@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -7,11 +6,10 @@ using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     string line, word;
     vector<string> sentence, sorted, reversed;
     int cnt = 1;
-    while (getline(in, line))
+    while (getline(cin, line))
     {
         cout << "Sentence " << cnt++ << " is ";
         for (int i = 0; i < line.length(); i++)

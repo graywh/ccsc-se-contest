@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
@@ -34,15 +33,14 @@ void dumpGrid(vector< vector<char> >& grid)
 
 int main()
 {
-    ifstream in("prob1_in.txt");
     int cnt = 1;
-    while (in >> dimR >> dimC)
+    while (cin >> dimR >> dimC)
     {
         vector< vector<char> > grid(dimR, vector<char>(dimC));
         pathFound = false;
         for (int i = 0; i < dimR; i++)
             for (int j = 0; j < dimC; j++)
-                in >> grid[i][j];
+                cin >> grid[i][j];
         cout << "\nMaze " << cnt << ":" << endl;
         moveRight(grid, 0, 0);
         if (!pathFound)

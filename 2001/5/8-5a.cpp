@@ -1,8 +1,7 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
-void parse(ifstream& in)
+void parse(istream& in)
 {
     char t;
     in >> t;
@@ -20,16 +19,15 @@ void parse(ifstream& in)
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     char t;
-    while (in >> t)
+    while (cin >> t)
     {
         if (!isdigit(t))
         {
             cout << "(";
-            parse(in);
+            parse(cin);
             cout << " " << t << " ";
-            parse(in);
+            parse(cin);
             cout << ")";
         }
         else

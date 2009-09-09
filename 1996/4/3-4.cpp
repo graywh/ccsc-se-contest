@@ -1,24 +1,22 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 using namespace std;
 
 int main()
 {
-    ifstream in("buffy.dat");
     vector< vector<string> > ary;
     vector<string> tvec;
     long rows, cols;
     int msg = 1;
     string input;
-    while (in >> rows >> cols)
+    while (cin >> rows >> cols)
     {
         for (int i = 0; i < rows; i++)
         {
             for (int j = 0; j < cols; j++)
             {
-                in >> input;
+                cin >> input;
                 tvec.push_back(input);
             }
             ary.push_back(tvec);

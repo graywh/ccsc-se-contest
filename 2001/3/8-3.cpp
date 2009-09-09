@@ -1,21 +1,19 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     vector<int> ary;
     int channel = 1, cross, dim, tmp;
-    while (!in.eof())
+    while (!cin.eof())
     {
         cross = 0;
         ary.clear();
-        while (in >> tmp)
+        while (cin >> tmp)
         {
             ary.push_back(tmp);
-            if (in.peek() == '\n')
+            if (cin.peek() == '\n')
                 break;
         }
         if (ary.empty())
@@ -25,7 +23,6 @@ int main()
             for (int j = 0; j < i; j++)
                 if (ary[i] < ary[j])
                     cross++;
-        cout << "There are " << cross << " wire crossings in routing channel " << channel++
-            << endl;
+        cout << "There are " << cross << " wire crossings in routing channel " << channel++ << endl;
     }
 }

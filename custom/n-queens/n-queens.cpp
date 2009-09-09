@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
@@ -75,8 +74,7 @@ void findQueen(vector<int>& g, int dim, int q)
 int main()
 {
     int dim;
-    ifstream in("queens.dat");
-    while (in >> dim)
+    while (cin >> dim)
     {
         vector<int> grid(dim * dim, 0);
         count = 0;

@@ -1,16 +1,14 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     bool nofreqs;
     int ln = 1, cnt, freq[26] = {0};
     string line;
     char ch;
-    while (getline(in, line))
+    while (getline(cin, line))
     {
         nofreqs = true;
         cnt = 0;

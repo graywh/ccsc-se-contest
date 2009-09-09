@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <string>
 #include <map>
@@ -7,7 +6,6 @@ using namespace std;
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     string str;
     char ch;
     map<string, char> x;
@@ -39,12 +37,12 @@ int main()
     x["-.--"] = 'Y';
     x["--.."] = 'Z';
 
-    while (in >> str)
+    while (cin >> str)
     {
         ch = x[str];
         cout << ch;
-        in.get(ch);
-        ch = in.peek();
+        cin.get(ch);
+        ch = cin.peek();
         if (ch == ' ')
             cout << ch;
     }

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
@@ -10,19 +9,18 @@ string months[] = {"January", "February", "March", "April", "May", "June", "July
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     string line, day, month, monthday, tmp;
     int yyyy, mm, dd, newmm, newdd;
-    while (getline(in, line))
+    while (getline(cin, line))
     {
         if (line == "From veep@whitehouse.gov")
         {
-            getline(in, line);
+            getline(cin, line);
             if (line == "To buddha@whitehouse.gov")
             {
                 days[1] = 28;
                 dd = 0;
-                in >> tmp >> day >> month >> monthday >> yyyy;
+                cin >> tmp >> day >> month >> monthday >> yyyy;
                 if (monthday.length() == 2)
                     dd = monthday[0] - '0';
                 else

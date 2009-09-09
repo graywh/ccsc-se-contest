@@ -1,13 +1,11 @@
 #include <iostream>
-#include <fstream>
 #include <cmath>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob1_in.txt");
     int cnt, n, tmp;
-    while (in >> n)
+    while (cin >> n)
     {
         cnt = 0;
         tmp = n;

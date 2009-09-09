@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
@@ -17,7 +16,7 @@ class PTree
         bool isPalin;
         string pal;
 
-        Node* create(ifstream& in)
+        Node* create(istream& in)
         {
             Node* tmp;
             char ch, dummy;
@@ -53,7 +52,7 @@ class PTree
         }
 
     public:
-        bool make(ifstream& in)
+        bool make(istream& in)
         {
             isPalin = false;
             root = create(in);
@@ -75,12 +74,11 @@ class PTree
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     int cnt = 1;
     PTree t;
-    while (!in.eof())
+    while (!cin.eof())
     {
-        t.make(in);
+        t.make(cin);
         cout << "Tree " << cnt << " is ";
         if (t.isPal())
             cout << "a palintree. Its palindrome is " << t.getPal() << "." << endl;

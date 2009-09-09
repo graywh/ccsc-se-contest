@@ -1,22 +1,20 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <stack>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     stack<int> incoming, newstack;
     vector< stack<int> > holds;
     int num, cnt, train = 0, tmp, out;
-    while (in >> cnt)
+    while (cin >> cnt)
     {
         train++;
-        in >> num;
+        cin >> num;
         for (int i = 0; i < cnt; i++)
         {
-            in >> tmp;
+            cin >> tmp;
             incoming.push(tmp);
         }
         holds.reserve(num);

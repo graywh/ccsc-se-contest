@@ -1,15 +1,13 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <set>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     string line;
     set<int> groups;
-    while (in >> line)
+    while (cin >> line)
     {
         groups.clear();
         int cnt = 0;

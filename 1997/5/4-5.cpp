@@ -1,26 +1,24 @@
 #include <iostream>
-#include <fstream>
 #include <queue>
 using namespace std;
 
 int main()
 {
-    ifstream in("mono_in.txt");
-    while (!in.eof())
+    while (!cin.eof())
     {
         queue<char> line;
         bool mono = true;
         char ch;
-        in.get(ch);
+        cin.get(ch);
         line.push(ch);
-        bool up = (ch < in.peek());
+        bool up = (ch < cin.peek());
         while (true)
         {
-            in.get(ch);
+            cin.get(ch);
             line.push(ch);
-            if (in.peek() == '\n' || in.eof())
+            if (cin.peek() == '\n' || cin.eof())
                 break;
-            if ((up && ch >= in.peek()) || (!up && ch <= in.peek()))
+            if ((up && ch >= cin.peek()) || (!up && ch <= cin.peek()))
                 mono = false;
         }
         while (!line.empty())

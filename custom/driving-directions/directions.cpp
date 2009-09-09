@@ -1,36 +1,34 @@
 #include <iostream>
-#include <fstream>
 #include <stack>
 #include <string>
 using namespace std;
 
 int main()
 {
-    ifstream in("directions.txt");
     int steps;
     double distance;
     string dummy, direction, locale;
     stack<double> drives;
     stack<string> turns, places;
 
-    while (in >> steps)
+    while (cin >> steps)
     {
-        in.ignore(10, '\n');
-        getline(in,locale);
+        cin.ignore(10, '\n');
+        getline(cin,locale);
         places.push(locale);
         for(int i = 0; i < (steps / 2); i++)
         {
-            in >> dummy >> direction >> dummy;
-            in.get();
-            getline(in, locale);
-            in >> dummy >> distance >> dummy;
+            cin >> dummy >> direction >> dummy;
+            cin.get();
+            getline(cin, locale);
+            cin >> dummy >> distance >> dummy;
             turns.push(direction);
             places.push(locale);
             drives.push(distance);
         }
-        in >> dummy >> direction >> dummy;
-        in.get();
-        getline(in, locale);
+        cin >> dummy >> direction >> dummy;
+        cin.get();
+        getline(cin, locale);
         turns.push(direction);
         places.push(locale);
 

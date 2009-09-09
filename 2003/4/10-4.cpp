@@ -1,13 +1,11 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     char ch;
     bool b = true;
-    while (in.get(ch))
+    while (cin.get(ch))
     {
         if (ch == EOF)
             break;

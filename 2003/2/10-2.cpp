@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <stack>
 #include <cmath>
@@ -32,14 +31,13 @@ string binar(int n)
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     int num, n1, n2;
     string h1, h2;
     char op;
-    in >> num;
+    cin >> num;
     for (int n = 0; n < num; n++)
     {
-        in >> h1 >> op >> h2;
+        cin >> h1 >> op >> h2;
         n1 = decimator(h1);
         n2 = decimator(h2);
         h1 = binar(n1);

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
@@ -22,9 +21,8 @@ int oper(int pos, string prefix)
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     string prefix;
-    while (in >> prefix)
+    while (cin >> prefix)
     {
         if (!isdigit(prefix[0]))
             oper(0, prefix);

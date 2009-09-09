@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
@@ -28,11 +27,10 @@ int valid(long mm, long dd, long yyyy)
 
 int main()
 {
-    ifstream in("dates.dat");
     long mm, dd, yyyy, dp;
     dp = dd = mm = yyyy = 0;
     char ch;
-    while (in >> mm >> ch >> dd >> ch >> yyyy)
+    while (cin >> mm >> ch >> dd >> ch >> yyyy)
     {
         if (!valid(mm,dd,yyyy))
         {

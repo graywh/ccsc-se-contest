@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <stack>
 using namespace std;
@@ -21,21 +20,20 @@ int getHund(int n)
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     int cnt = 1;
-    while (!in.eof())
+    while (!cin.eof())
     {
         stack<char> msg;
         stack<int> code;
         string act;
         int n;
         char ch, ch1, ch2;
-        in >> act;
-        in.get(ch);
+        cin >> act;
+        cin.get(ch);
         if (act == "encode")
         {
             cout << "\nMessage " << cnt << " (encoded): ";
-            while (in.get(ch))
+            while (cin.get(ch))
             {
                 if (ch == '\n')
                     break;
@@ -53,15 +51,15 @@ int main()
         else if (act == "decode")
         {
             cout << "\nMessage " << cnt << " (decoded): ";
-            while (in.get(ch1))
+            while (cin.get(ch1))
             {
                 if (ch1 == '\n')
                     break;
-                in.get(ch2);
+                cin.get(ch2);
                 n = 10 * (ch2 - '0') + (ch1 - '0');
                 if (n < 23)
                 {
-                    in.get(ch);
+                    cin.get(ch);
                     n+=100;
                 }
                 ch = (char)n;

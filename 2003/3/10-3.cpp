@@ -1,12 +1,10 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <map>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     map<int, string> conv;
     conv[1] = "Bogey";
     conv[0] = "Par";
@@ -14,10 +12,10 @@ int main()
     conv[-2] = "Eagle";
     conv[-3] = "Double Eagle";
     int n, h, s;
-    in >> n;
+    cin >> n;
     for (int i = 0; i < n; i++)
     {
-        in >> h >> s;
+        cin >> h >> s;
         if (h + 1 < s)
             cout << "Double Bogey" << endl;
         else if (s == 1)

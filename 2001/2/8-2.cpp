@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <queue>
 #include <set>
@@ -49,16 +48,15 @@ bool isValid(Point p, int dim)
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     set<Point> visited;
     queue<Point> visit;
     int gridDim, num, cnt;
     Point start, end, here, hereU, hereD, hereL, hereR;
     const Point UP(-1, 0), DOWN(1, 0), LEFT(0, -1), RIGHT(0, 1);
     bool complete;
-    while (in >> gridDim)
+    while (cin >> gridDim)
     {
-        in >> start.row >> start.col >> end.row >> end.col;
+        cin >> start.row >> start.col >> end.row >> end.col;
         cnt = 0;
         complete = false;
         vector< vector<int> > grid(gridDim, vector<int>(gridDim, 0));
@@ -67,7 +65,7 @@ int main()
             visit.pop();
         for (int i = 0; i < gridDim; i++)
             for (int j = 0; j < gridDim; j++)
-                in >> grid[i][j];
+                cin >> grid[i][j];
         visit.push(start);
         while (!complete)
         {

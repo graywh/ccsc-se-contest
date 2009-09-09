@@ -1,12 +1,10 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
 int main()
 {
     int a, b, sum;
-    ifstream in("prob1_in.txt");
-    while (in >> a >> b)
+    while (cin >> a >> b)
     {
         cout << a << " x " << b << " = ";
         sum = 0;

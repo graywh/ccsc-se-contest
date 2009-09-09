@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
@@ -16,10 +15,9 @@ void clear(int x, int y)
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     int dim, targets = 0;
     char ch;
-    in >> dim;
+    cin >> dim;
     grid.resize(dim + 2);
     for (int i = 0; i < dim + 2; i++)
     {
@@ -30,9 +28,9 @@ int main()
     for (i = 1; i <= dim; i++)
         for (int j = 1; j <= dim; j++)
         {
-            in.get(ch);
+            cin.get(ch);
             if (ch == '\n')
-                in.get(ch);
+                cin.get(ch);
             grid[i][j] = (ch - '0');
         }
     for (i = 1; i <= dim; i++)

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <string>
 #include <set>
@@ -28,20 +27,19 @@ void match(string name, int n)
 
 int main()
 {
-    ifstream in("prob1_in.txt");
     int num, m, p, cnt = 1;
     char v, s;
     bool full, part;
     string comp;
     multiset<string>::iterator itr;
-    while (in >> num >> m >> v)
+    while (cin >> num >> m >> v)
     {
         cout << "Sample " << cnt << ": ";
         bill.resize(num);
         bill[0] = Node(v);
         for (int i = 0; i < m; i++)
         {
-            in >> p >> num >> s >> v;
+            cin >> p >> num >> s >> v;
             bill[num - 1] = Node(v);
             bill[p - 1].child.push_back(num);
         }

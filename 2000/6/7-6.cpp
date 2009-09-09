@@ -1,20 +1,18 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob6_in.txt");
     vector<int> test, perc;
     vector<float> test2;
     int bagC, cont, tmp, val, cnt = 1;
     float max;
-    while (in >> bagC >> cont)
+    while (cin >> bagC >> cont)
     {
         for (int i = 0; i < cont * 2; i++)
         {
-            in >> tmp;
+            cin >> tmp;
             test.push_back(tmp);
         }
         for (int j = 0; j < cont; j++)

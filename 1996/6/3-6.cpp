@@ -1,15 +1,13 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
 int main()
 {
-    ifstream in("pig.dat");
     char ch;
     string word, tmp, tmp2;
 
-    while (in >> word)
+    while (cin >> word)
     {
         ch = word.at(word.length() - 1);
         if (ch == ',' || ch == '.' || ch == '!' || ch == '?')

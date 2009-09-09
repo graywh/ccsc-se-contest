@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <vector>
 using namespace std;
@@ -74,15 +73,14 @@ int main()
     table.push_back(Domino(5,5));   table.push_back(Domino(5,6));
     table.push_back(Domino(6,6));
 
-    ifstream in("prob6_in.txt");
     int gridnumber = 1;
 
-    while ((char)in.peek() != -1)
+    while ((char)cin.peek() != -1)
     {
         for (int r = 0; r < 7; r++)
             for (int c = 0; c < 8; c++)
-                in >> grid[r][c];
-        in.ignore(100, '\n');
+                cin >> grid[r][c];
+        cin.ignore(100, '\n');
 
         cout << "Grid #" << gridnumber << ":" << endl << endl;
         for (int r = 0; r < 7; r++)
@@ -98,5 +96,4 @@ int main()
         cout << "There are " << numsols << " solution(s) for grid #" << gridnumber++
             << "." << endl << endl;
     }
-    in.close();
 }

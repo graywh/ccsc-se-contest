@@ -55,7 +55,6 @@ bool isComp(vector<int> vs)
 
 int main()
 {
-    ifstream in("prob6_in.txt");
     ifstream data("static.dat");
     int n, v, o, cl;
     string tmp;
@@ -79,15 +78,15 @@ int main()
         other.insert(tmp);
     }
     data.close();
-    while (!in.eof())
+    while (!cin.eof())
     {
         sc.clear();
         sent.clear();
-        while (in.peek() != '\n')
+        while (cin.peek() != '\n')
         {
-            if (!in.eof())
+            if (!cin.eof())
             {
-                in >> tmp;
+                cin >> tmp;
                 ch = tmp[tmp.size() - 1];
                 if (ch == '.' || ch == ',' || ch == ';' || ch == '?' || ch == '!')
                     tmp.erase(tmp.end() - 1);
@@ -117,6 +116,6 @@ int main()
             else
                 cout << "other" << endl;
         }
-        in.ignore(1, '\n');
+        cin.ignore(1, '\n');
     }
 }

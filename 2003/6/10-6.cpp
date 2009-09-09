@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
@@ -93,12 +92,10 @@ class Grid
 
 int main()
 {
-    ifstream in("prob6_in.txt");
-
     int dir, len, ps;
     Grid myg;
 
-    while (in >> dir >> len >> ps)
+    while (cin >> dir >> len >> ps)
         myg.Move(dir, len, ps);
     myg.Draw();
 }

@@ -1,13 +1,11 @@
 #include <iostream>
-#include <fstream>
 #include <deque>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     int numcoins;
-    while (in >> numcoins)
+    while (cin >> numcoins)
     {
         deque<int> p1, p2;
         int worst = (numcoins * (numcoins + 1) / 4),

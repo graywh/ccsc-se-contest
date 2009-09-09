@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 #include <map>
@@ -7,7 +6,6 @@ using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     int i, intr;
     string keyn, note, dir, intrvl, test;
     bool first, valid, sharp;
@@ -40,7 +38,7 @@ int main()
     interval["seventh"] = 6;
     interval["octave"] = 0;
 
-    while (in >> keyn)
+    while (cin >> keyn)
     {
         first = true;
         cout << "Key of " << keyn << ": ";
@@ -55,7 +53,7 @@ int main()
             i = (i + change[j]) % 12;
             key.push_back(notes[i]);
         }
-        while (in >> note >> dir >> intrvl)
+        while (cin >> note >> dir >> intrvl)
         {
             i = 0;
             sharp = false;
@@ -93,9 +91,9 @@ int main()
             }
             else
                 cout << " is an invalid note for this key";
-            while (in.peek() == ' ')
-                in.ignore();
-            if (in.peek() == '\n')
+            while (cin.peek() == ' ')
+                cin.ignore();
+            if (cin.peek() == '\n')
                 break;
         }
         key.clear();

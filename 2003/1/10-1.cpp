@@ -1,18 +1,16 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob1_in.txt");
     int lines;
     char ch;
     bool mov = true;
     int ary[26] = {0};
     char aryc[] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
         'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-    in >> lines;
-    while (in.get(ch))
+    cin >> lines;
+    while (cin.get(ch))
     {
         if (ch == EOF)
             break;

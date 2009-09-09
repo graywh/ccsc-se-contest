@@ -1,14 +1,12 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     int x, cnt;
     string line;
-    while (getline(in, line))
+    while (getline(cin, line))
     {
         if (line.empty())
         {

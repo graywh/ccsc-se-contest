@@ -1,12 +1,10 @@
 #include <iostream>
-#include <fstream>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob2_in.txt");
     int x, y, total, min;
-    while (in >> min)
+    while (cin >> min)
     {
         x = min / 60;
         y = min % 60;

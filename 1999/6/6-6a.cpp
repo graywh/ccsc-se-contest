@@ -1,20 +1,18 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob6_in.txt");
     int caproom, cnt = 1, n, tmp;
     vector<int> conts;
     vector<int> ship;
-    while (in >> caproom >> n)
+    while (cin >> caproom >> n)
     {
         for (int i = 0; i < n; i++)
         {
-            in >> tmp;
+            cin >> tmp;
             conts.push_back(tmp);
         }
         sort(conts.begin(), conts.end());

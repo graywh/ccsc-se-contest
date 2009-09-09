@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <cmath>
 using namespace std;
@@ -18,15 +17,14 @@ double distance(Point a, Point b)
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     int ships, n1, n2, cnt = 1;
     double min, tmp;
     vector<Point> plot;
-    while (in >> ships)
+    while (cin >> ships)
     {
         plot.reserve(ships);
         for (int i = 0; i < ships; i++)
-            in >> plot[i].x >> plot[i].y;
+            cin >> plot[i].x >> plot[i].y;
         min = distance(plot[0], plot[1]);
         n1 = 0;
         n2 = 1;

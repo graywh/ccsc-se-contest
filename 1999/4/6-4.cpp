@@ -1,13 +1,11 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     int dim;
-    while (in >> dim)
+    while (cin >> dim)
     {
         int diag = 0;
         bool magic = true;
@@ -16,7 +14,7 @@ int main()
         {
             for(int j = 0; j < dim; j++)
             {
-                in >> grid[i][j];
+                cin >> grid[i][j];
                 grid[dim][j] = 0;
             }
             grid[i][dim] = 0;

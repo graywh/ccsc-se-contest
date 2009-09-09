@@ -7,7 +7,7 @@ int main()
 {
     int sum = 0, cnt = 0, num = 6, dig = 0;
     cout << "Perfect Number    Number of Digits" << endl
-        << "----------------------------------" << endl;
+        <<  "----------------------------------" << endl;
     while (cnt < 4)
     {
         for (int i = 1; i <= num / 2; i++)

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <iomanip>
 #include <cmath>
 #include <string>
@@ -8,7 +7,6 @@ using namespace std;
 
 int main()
 {
-    ifstream in("prob4_in.txt");
     string name;
     map<int,int> points;
     points[0] = 500;
@@ -21,7 +19,7 @@ int main()
     points[7] = 50;
     points[8] = 25;
     points[9] = 10;
-    while (in >> name)
+    while (cin >> name)
     {
         cout << endl << "Score Summary for " << name << endl
             << "-----------------------" << endl;
@@ -29,7 +27,7 @@ int main()
         double dist = 0;
         for (int i = 1; i < 6; i++)
         {
-            in >> x >> y;
+            cin >> x >> y;
             dist = sqrt(x * x + y * y);
             d = dist / 50;
             if ((int)dist == dist)

@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
 #include <algorithm>
@@ -21,11 +20,10 @@ struct WoodChuck
 
 int main()
 {
-    ifstream in("prob3_in.txt");
     vector<WoodChuck> wc;
     string name;
     int tooth;
-    while (in >> name >> tooth)
+    while (cin >> name >> tooth)
     {
         WoodChuck tmp(name, tooth);
         wc.push_back(tmp);

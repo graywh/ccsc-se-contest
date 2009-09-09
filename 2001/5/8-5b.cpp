@@ -1,17 +1,15 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <stack>
 using namespace std;
 
 int main()
 {
-    ifstream in("prob5_in.txt");
     string st;
     char tmp;
     stack<char> mem;
     int extra = 0;
-    while (in >> st)
+    while (cin >> st)
     {
         for (int i = 0; i < st.length(); i++)
         {

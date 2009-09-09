@@ -1,5 +1,4 @@
 #include <iostream>
-#include <fstream>
 #include <vector>
 #include <algorithm>
 using namespace std;
@@ -29,15 +28,14 @@ void pick(int last, int sum, int cnt)
 
 int main()
 {
-    ifstream in("prob6_in.txt");
     int cnt = 1, n, tmp;
-    while (in >> caproom >> n)
+    while (cin >> caproom >> n)
     {
         vector<int> findnum;
         carts.clear();
         for (int i = 0; i < n; i++)
         {
-            in >> tmp;
+            cin >> tmp;
             carts.push_back(tmp);
         }
         sort(carts.begin(), carts.end());
