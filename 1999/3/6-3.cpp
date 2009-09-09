@@ -76,8 +76,9 @@ int main()
 {
     int cnt = 1;
     PTree t;
-    while (!cin.eof())
+    while (cin.get() == '(')
     {
+        cin.unget();
         t.make(cin);
         cout << "Tree " << cnt << " is ";
         if (t.isPal())
@@ -85,5 +86,6 @@ int main()
         else
             cout << "not a palintree." << endl;
         cnt++;
+        cin.ignore(1,'\n');
     }
 }

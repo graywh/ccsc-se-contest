@@ -21,18 +21,17 @@ int getHund(int n)
 int main()
 {
     int cnt = 1;
-    while (!cin.eof())
+    string act;
+    while (cin >> act)
     {
         stack<char> msg;
         stack<int> code;
-        string act;
         int n;
         char ch, ch1, ch2;
-        cin >> act;
         cin.get(ch);
         if (act == "encode")
         {
-            cout << "\nMessage " << cnt << " (encoded): ";
+            cout << "Message " << cnt << " (encoded): ";
             while (cin.get(ch))
             {
                 if (ch == '\n')
@@ -47,10 +46,11 @@ int main()
                 cout << code.top();
                 code.pop();
             }
+            cout << endl;
         }
         else if (act == "decode")
         {
-            cout << "\nMessage " << cnt << " (decoded): ";
+            cout << "Message " << cnt << " (decoded): ";
             while (cin.get(ch1))
             {
                 if (ch1 == '\n')
@@ -70,8 +70,8 @@ int main()
                 cout << msg.top();
                 msg.pop();
             }
+            cout << endl;
         }
         cnt++;
     }
-    cout << endl;
 }
