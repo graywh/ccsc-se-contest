@@ -1,0 +1,9 @@
+Ship 1
+------
+Number of containers loaded: 6
+Weight under capacity: 10
+
+Ship 2
+------
+Number of containers loaded: 1
+Weight under capacity: 0

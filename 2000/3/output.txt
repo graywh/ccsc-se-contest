@@ -1,0 +1,3 @@
+Line 1: S is a super freq.
+Line 2: O is a super freq. W is a super freq.
+Line 3: There are no super freqs.

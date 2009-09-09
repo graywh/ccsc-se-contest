@@ -1,0 +1,2 @@
+Train 1 can be rearranged.
+Train 2 cannot be rearranged. At least 4 holding tracks would be needed.

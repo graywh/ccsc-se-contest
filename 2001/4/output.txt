@@ -1,0 +1,19 @@
+Score Summary for Frank
+-----------------------
+   Hit 1 =          150
+   Hit 2 =          500
+   Hit 3 =            0
+   Hit 4 =            0
+   Hit 5 =           75
+             ----------[D[D[D[D[D[D[D[D[D[D [C[C[C[C[C[C[C[C[C
+   Score =          725
+
+Score Summary for Sally
+-----------------------
+   Hit 1 =          500
+   Hit 2 =          250
+   Hit 3 =          100
+   Hit 4 =           50
+   Hit 5 =          500
+              ---------
+   Score =         1400

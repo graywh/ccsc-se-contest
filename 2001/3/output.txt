@@ -1,0 +1,2 @@
+There are 22 wire crossings in routing channel 1.
+There are 4 wire crossings in routing channel 2.

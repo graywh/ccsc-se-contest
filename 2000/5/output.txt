@@ -1,0 +1,2 @@
+Fleet 1: Ship 1 and Ship 2 are the closest pair.
+Fleet 2: Ship 4 and Ship 8 are the closest pair.

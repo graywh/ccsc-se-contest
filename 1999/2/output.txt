@@ -1,0 +1,7 @@
+Number of coins: 15
+Pile 1 contains: 3, 5, 6, 9, 10, 12, 15 with value 60.
+Pile 2 contains: 1, 2, 4, 7, 8, 11, 13, 14 with value 60.
+
+Number of coins: 8
+Pile 1 contains: 1, 4, 5, 8 with value 18.
+Pile 2 contains: 2, 3, 6, 7 with value 18.

@@ -1,0 +1,1 @@
+There are 10 squares on a shortest path from (3,2) to (4,6).

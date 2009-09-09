@@ -1,0 +1,2 @@
+Key of C: F up second => G; G down third => E
+Key of E: F# down fourth => C#; Bb is an invalid note for this key; B up octave => B

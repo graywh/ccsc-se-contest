@@ -1,0 +1,3 @@
+Sentence 1 is monotonic.
+Sentence 2 is non-monotonic.
+Sentence 3 is monotonic.

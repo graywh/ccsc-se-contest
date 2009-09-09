@@ -1,0 +1,9 @@
+Game 1
+Player 1 : 6 cards
+Player 2 : 2 cards
+
+Game 2
+Player 1 : 0 cards
+Player 2 : 2 cards
+Player 3 : 2 cards
+Player 4 : 0 cards
