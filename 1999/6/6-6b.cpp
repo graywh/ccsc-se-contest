@@ -46,8 +46,9 @@ int main()
         reverse(carts.begin(), carts.end());
         best = 0;
         pick(-1, 0, 0);
-        cout << "Ship " << cnt++ << endl << "------" << endl
-            << "Number of containers loaded: " << num << endl
-            << "Weight under capacity: " << caproom - best << endl << endl;
+        cout << "Ship " << cnt++ << endl
+            <<  "------" << endl
+            <<  "Number of containers loaded: " << num << endl
+            <<  "Weight under capacity: " << caproom - best << endl << endl;
     }
 }

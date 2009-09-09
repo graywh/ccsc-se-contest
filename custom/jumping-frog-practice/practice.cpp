@@ -5,7 +5,7 @@ int countF()
 {
     while(cin.peek() != EOF && tolower(cin.peek())!='f')
         cin.ignore();
-    return (cin.get()==EOF?0:1+countF());
+    return (cin.get()==EOF ? 0 : 1+countF());
 }
 
 int main()

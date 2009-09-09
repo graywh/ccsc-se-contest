@@ -21,7 +21,8 @@ int main()
     points[9] = 10;
     while (cin >> name)
     {
-        cout << endl << "Score Summary for " << name << endl
+        cout << endl
+            << "Score Summary for " << name << endl
             << "-----------------------" << endl;
         int score = 0, d = 0, x = 0, y = 0, n = 0;
         double dist = 0;
@@ -39,6 +40,6 @@ int main()
             d = 0;
         }
         cout << "              ---------" << endl
-            << "   Score =" << setw(13) << score << endl;
+            <<  "   Score =" << setw(13) << score << endl;
     }
 }

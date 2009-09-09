@@ -8,17 +8,17 @@ int main()
     int cnt = 0;
     while (cin.get(ch))
     {
-        switch (ch)
+        if (ch == ' ' || ch == '\n' || ch == '.' || ch == ',' || ch == ':' ||
+                ch == ';' || ch == '?' || ch == '!')
         {
-            case ',': case '.': case ';': case ':': case '?': case '!': case ' ': case '\n':
-                cnt++;
+            cnt++;
+            tc = cin.peek();
+            while (tc == ' ' || tc == '\n' || tc == '.' || tc == ',' || tc == ':' ||
+                    tc == ';' || tc == '?' || tc == '!')
+            {
+                cin.ignore();
                 tc = cin.peek();
-                while (tc == ' ' || tc == '\n' || tc == '.' || tc == ',' || tc == ':' ||
-                        tc == ';' || tc == '?' || tc == '!')
-                {
-                    cin.ignore();
-                    tc = cin.peek();
-                }
+            }
         }
     }
     cout << "This file contains " << cnt << " words." << endl;

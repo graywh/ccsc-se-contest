@@ -5,8 +5,8 @@ using namespace std;
 int main()
 {
     int z, i, m, l;
-    cout << "\nZ  I  M  L  Length" << endl
-        << "------------------" << endl;
+    cout << "Z  I  M  L  Length" << endl
+        <<  "------------------" << endl;
     while (cin >> z >> i >> m >> l)
     {
         int cnt = 0, start;

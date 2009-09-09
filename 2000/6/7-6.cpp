@@ -48,7 +48,8 @@ int main()
             else
                 break;
         }
-        cout << "Game " << cnt++ << endl << "------" << endl;
+        cout << "Game " << cnt++ << endl
+            <<  "------" << endl;
         for (int q = 0; q < cont; q++)
             cout << "Container " << q + 1 << ": " << perc[q] << "%" << endl;
         cout << endl;

@@ -32,9 +32,10 @@ int main()
                         caproom -= conts[i];
                         ship[j] = conts[i];
                     }
-        cout << "Ship " << cnt++ << endl << "------" << endl
-            << "Number of containers loaded: " << ship.size() << endl
-            << "Weight under capacity: " << caproom << endl << endl;
+        cout << "Ship " << cnt++ << endl
+            <<  "------" << endl
+            <<  "Number of containers loaded: " << ship.size() << endl
+            <<  "Weight under capacity: " << caproom << endl << endl;
         ship.clear();
         conts.clear();
     }
