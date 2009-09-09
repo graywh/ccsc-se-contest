@@ -67,12 +67,12 @@ int main()
         data >> tmp;
         nouns.insert(tmp);
     }
-    for (i = 0; i < v; i++)
+    for (int i = 0; i < v; i++)
     {
         data >> tmp;
         verbs.insert(tmp);
     }
-    for (i = 0; i < o; i++)
+    for (int i = 0; i < o; i++)
     {
         data >> tmp;
         other.insert(tmp);
