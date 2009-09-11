@@ -51,7 +51,7 @@ class PTree:
         return 1
 
 cnt = 1
-for line in sys.stdin.read().splitlines():
+for line in sys.stdin:
     line = list(line)
     t = PTree(line)
     print "Tree %s is" % cnt,

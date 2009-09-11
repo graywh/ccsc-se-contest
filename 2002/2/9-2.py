@@ -2,7 +2,7 @@
 
 import sys
 
-for line in sys.stdin.readlines():
+for line in sys.stdin:
     x = int(line)
     y = x / 60
     z = x % 60

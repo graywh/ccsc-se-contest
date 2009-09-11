@@ -2,7 +2,7 @@
 
 import sys
 
-for line in sys.stdin.read().splitlines():
+for line in sys.stdin:
     numcoins = int(line)
     p1 = []
     p2 = []

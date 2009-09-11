@@ -2,7 +2,7 @@
 
 import sys
 
-for line in sys.stdin.readlines():
+for line in sys.stdin:
     count = 0
     x = 1
     for l in line:

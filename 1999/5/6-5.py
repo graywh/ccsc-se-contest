@@ -3,7 +3,7 @@
 import sys
 
 train = 1
-for line in sys.stdin.read().splitlines():
+for line in sys.stdin:
     ln = map(int, line.split())
     cnt = ln[0]
     num = ln[1]

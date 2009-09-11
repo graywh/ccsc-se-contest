@@ -4,7 +4,7 @@ import sys
 
 print "Z  I  M  L  Length"
 print "------------------"
-for line in sys.stdin.read().splitlines():
+for line in sys.stdin:
     z, i, m, l = map(int, line.split())
     cnt = 0
     print "%s %s %s %s" % (str(z).ljust(2), str(i).ljust(2), str(m).rjust(2), str(l).ljust(2)),
@@ -12,7 +12,6 @@ for line in sys.stdin.read().splitlines():
     l = ((z * l + i) % m)
     if m == 1:
         print "ERROR"
-        continue
     else:
         while True:
             l = ((z * l + i ) % m)

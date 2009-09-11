@@ -3,7 +3,7 @@
 import sys
 
 cnt = 1
-for line in sys.stdin.read().splitlines():
+for line in sys.stdin:
     line = map(int, line.split())
     caproom = line[0]
     n = line[1]

@@ -2,7 +2,7 @@
 
 import sys
 
-for line in sys.stdin.readlines():
+for line in sys.stdin:
     groups = set()
     count = 0
     for l in line:

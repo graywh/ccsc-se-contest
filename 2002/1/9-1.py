@@ -2,7 +2,7 @@
 
 import sys
 
-for line in sys.stdin.readlines():
+for line in sys.stdin:
     a,b,c,n = map(int, line.split(','))
     total = a + b + c
     for i in xrange(3,n):
