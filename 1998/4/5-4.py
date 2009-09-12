@@ -44,8 +44,8 @@ while True:
     key = []
     output = []
     key.append(notes[i])
-    for j in xrange(6):
-        i = (i + change[j]) % 12
+    for j in change:
+        i = (i + j) % 12
         key.append(notes[i])
     while True:
         if line == "":
@@ -59,10 +59,10 @@ while True:
         else:
             line = ""
         i = 0
-        sharp = 0
-        valid = 0
+        sharp = False
+        valid = False
         out = note
-        if len(keyn) < 2 and len(note) > 1:
+        if len(keyn) == 1 and len(note) == 2:
             sharp = (note[1] == "#")
         if sharp:
             note = conv[note]
@@ -80,7 +80,7 @@ while True:
                 note = conv[key[i]]
             else:
                 note = key[i]
-            if len(keyn) < 2 and len(note) > 1:
+            if len(keyn) == 1 and len(note) == 2:
                 if note[1] == "#":
                     out += note
                 else:
