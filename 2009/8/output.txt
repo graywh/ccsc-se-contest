@@ -1,0 +1,1 @@
+The correlation between your X and Y variables is 0.59.
