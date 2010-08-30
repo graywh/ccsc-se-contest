@@ -22,6 +22,7 @@ STDIN.readlines.each do |line|
   end
   scores.push [name,score.to_s]
 end
+
 scores.sort { |a,b| a[1] <=> b[1] }.each do |name, score|
   puts "#{name.ljust(14)} #{score.rjust(3)}"
 end

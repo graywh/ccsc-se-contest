@@ -80,12 +80,8 @@ STDIN.readline
 STDIN.readlines.each do |line|
   dollars, cents = line.split('.').collect(&:to_i)
   word_dollars = to_words(dollars)
-  if cents > 0
-    word_dollars += " and #{cents}/100"
-  end
+  word_dollars += " and #{cents}/100" if cents > 0
   word_dollars += ' dollar'
-  if dollars > 0 && cents > 0
-    word_dollars += 's'
-  end
+  word_dollars += 's' if dollars > 0 && cents > 0
   puts word_dollars
 end
