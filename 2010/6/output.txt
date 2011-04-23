@@ -1,0 +1,5 @@
+Lightyear,Buzz has earned 14 hours with a GPA of 3.07
+Head,MrPotato has earned 11 hours with a GPA of 2.50
+Peep,Bo has earned 12 hours with a GPA of 3.17
+Dog,Slinky has earned 8 hours with a GPA of 1.17
+Doll,Barbie has earned 12 hours with a GPA of 4.00

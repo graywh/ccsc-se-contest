@@ -1,0 +1,8 @@
+1 E A
+1 D A
+5 23 13 2 16 E HELLO
+5 23 13 2 16 D MBYNE
+5 22 10 2 13 20 8 3 E Students
+12 4 18 22 D Dsug
+13 19 11 4 23 8 15 19 D PattYmae
+#

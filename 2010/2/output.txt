@@ -1,0 +1,10 @@
+1)Auburn 470.56
+2)TCU 451.50
+3)Oregon 449.29
+4)BoiseState 445.86
+5)Utah 434.75
+6)OhioState 360.67
+7)Oklahoma 353.50
+8)Nebraska 350.43
+9)Alabama 348.63
+10)Wisconsin 327.43
