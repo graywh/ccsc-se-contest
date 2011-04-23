@@ -111,3 +111,23 @@
 5 The Election
 6 Great Caesar Cipher
 7 Stacks of Money
+
+2009 - 16
+1 Pay To the Order Of
+2 What Time Is It in Paris?
+3 Cody's Code
+4 Strike!
+5 Defining Moment
+6 The Lucky Lottery List
+7 An Excel-lent Problem
+8 Correlation Analysis
+
+2010 - 17
+1 The Chinese Zodiac
+2 Elo Rating Equation
+3 Spiral of Theodorus
+4 Lily's Birthday Party
+5 Vigère's Cipher
+6 Medfield GPA Calculator
+7 Australia Word Search
+8 Windows
