@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 count = Hash.new(0)
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   state, votes, name = line.split
   count[name] += votes.to_i
 end

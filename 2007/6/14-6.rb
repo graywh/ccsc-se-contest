@@ -13,7 +13,7 @@ def area(p1, p2, p3)
 end
 
 STDIN.readline
-points = STDIN.readlines.collect do |line|
+points = STDIN.collect do |line|
   line.split(',').collect do |i|
     i.to_i
   end

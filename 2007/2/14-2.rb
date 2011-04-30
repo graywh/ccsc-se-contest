@@ -20,7 +20,7 @@ def pause(p, n)
   end
 end
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   line.strip!.downcase!
   break if line == "*"
   print KEYS[line[0,1]]

@@ -13,14 +13,14 @@ def getHund(n)
 end
 
 count = 1
-STDIN.readlines.each_slice(2) do |act, line|
+STDIN.each_slice(2) do |act, line|
   act.strip!
   line.strip!
   print "Message #{count} (#{act}d): "
   case act
   when "encode"
     code = []
-    0...line.length.each do |i|
+    line.length.times do |i|
       ch = line[i]
       code << getHund(ch) if ch > 99
       code << getTen(ch)

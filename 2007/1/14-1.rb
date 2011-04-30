@@ -10,8 +10,8 @@ ups = { '0' => '0',
         '9' => '6',
       }
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do
+  line = STDIN.readline
   line.strip!
   print "#{line}: "
   puts (line == line.chars.collect { |c| ups[c] } .reverse.join('') ? 'Yes' : 'No')

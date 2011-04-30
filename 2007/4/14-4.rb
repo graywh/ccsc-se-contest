@@ -15,11 +15,10 @@ def needed(x, p)
 end
 
 paper = STDIN.readline.split[2].to_i
-STDIN.readline
 
-count = 1
-STDIN.readlines.each do |line|
-  print "Gift #{count} "
+STDIN.readline.to_i.times do |i|
+  line = STDIN.readline
+  print "Gift #{i+1} "
   d = line.split('x').collect { |a| a.to_i }
   n = needed(d, paper)
   if n
@@ -27,5 +26,4 @@ STDIN.readlines.each do |line|
   else
     puts "cannot be wrapped."
   end
-  count += 1
 end

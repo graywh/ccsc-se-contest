@@ -3,7 +3,7 @@
 THEAAN = /\A(The|A|An)\s+(.*)\Z/
 
 db = Hash.new { |hash, key| hash[key] = [] }
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   year, title = line.split(' ', 2)
   title = $2 + ', ' + $1 if title =~ THEAAN
   db[year] << title

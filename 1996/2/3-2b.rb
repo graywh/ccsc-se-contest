@@ -2,7 +2,7 @@
 
 require 'date'
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   begin
     puts "#{line.strip} falls on a #{Date::DAYNAMES[Date.parse(line).wday]}"
   rescue

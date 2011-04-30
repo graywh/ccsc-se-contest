@@ -2,7 +2,7 @@
 
 CHK = [1,0,0,0,0,0,1]
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   line = line.strip.chars.collect { |c| c.to_i }
   recording = false
   line.each_slice(7) do |slice|

@@ -13,7 +13,7 @@ while true
   rows.times { ary << file.readline.split }
   print "Message #{msg} => "
   j = cols
-  0...rows.each do |i|
+  rows.times do |i|
     print ary[i][j-1]
     print ' '
     j -= 1

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   mono = true
   up = line[0,1] < line[1,1]
   (2...(line.length-1)).each do |i|

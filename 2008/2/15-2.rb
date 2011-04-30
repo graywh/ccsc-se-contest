@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do
+  line = STDIN.readline
   sum = 0
   line.strip!
   while line.length > 0

@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   x = line.to_i
   y = x / 60
   z = x % 60

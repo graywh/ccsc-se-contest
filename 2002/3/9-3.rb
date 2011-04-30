@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   groups = []
   count = 0
   line.chars do |c|

@@ -33,8 +33,8 @@ def wordend(word, preposition, dup=false)
   end
 end
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do
+  line = STDIN.readline
   catch(:redo) do
     case line
     when FROM

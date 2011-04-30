@@ -10,7 +10,7 @@ mean_y = sum_y / n
 std_x = 0
 std_y = 0
 sum_pairs = 0
-(0...n).each do |i|
+n.times do |i|
   std_x += (x[i] - mean_x) ** 2
   std_y += (y[i] - mean_y) ** 2
   sum_pairs += x[i] * y[i]

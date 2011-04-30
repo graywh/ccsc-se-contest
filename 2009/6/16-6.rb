@@ -22,8 +22,8 @@ def count(n, m, so_far=[])
   return c
 end
 
-STDIN.readline
-STDIN.readlines.each_with_index do |line, i|
+STDIN.readline.to_i.times do |i|
+  lines = STDIN.readline
   n, m = line.split.collect(&:to_i)
   number = count(n, m)
   puts "Data set #{i+1}: #{n} #{m} #{number}"

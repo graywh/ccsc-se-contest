@@ -9,14 +9,13 @@ def clear(grid, dim, x, y)
   end
 end
 
-file = File.new('prob2_in.txt')
 targets = 0
-dim = 0...file.readline.to_i
-grid = file.readlines.collect do |line|
+dim = STDIN.readline.to_i
+grid = STDIN.collect do |line|
   line.chars.collect { |c| c.to_i }
 end
-dim.each do |i|
-  dim.each do |j|
+dim.times do |i|
+  dim.times do |j|
     if grid[i][j] != 0
       targets += 1
       clear(grid, dim, i, j)

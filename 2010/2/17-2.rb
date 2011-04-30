@@ -6,8 +6,7 @@ def rating(win,loss,sum)
   (sum + 400.0 * (win - loss)) / (win + loss)
 end
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do |line|
   team, record, scores = line.split(' ', 3)
   wins, loss = record.split('-').map(&:to_i)
   sum = scores.split.map(&:to_i).inject(&:+)

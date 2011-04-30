@@ -76,8 +76,8 @@ def to_words_ones(number)
   TO_WORD[number % 10]
 end
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do
+  line = STDIN.readline
   dollars, cents = line.split('.').collect(&:to_i)
   word_dollars = to_words(dollars)
   word_dollars += " and #{cents}/100" if cents > 0

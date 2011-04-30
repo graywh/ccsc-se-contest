@@ -2,8 +2,8 @@
 
 BLOC = /\(([RD]{3})\)/
 
-STDIN.readline
-STDIN.readlines.each_with_index do |line, i|
+STDIN.readline.to_i.times do |i|
+  line = STDIN.readline
   while line =~ BLOC
     line.sub!(BLOC) { |s| $1.chars.sort[1] }
   end

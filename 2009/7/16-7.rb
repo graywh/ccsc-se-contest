@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   line =~ /R([0-9]*)C([0-9]*)/
   row = $1.to_i
   column = $2.to_i

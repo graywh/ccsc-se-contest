@@ -13,10 +13,9 @@ ORDER = {
 
 STEPS = %w( up down )
 
-n = 1
-STDIN.readline
-STDIN.readlines.each do |line|
-  print "Case #{n}: "
+STDIN.readline.to_i.times do |i|
+  line = STDIN.readline
+  print "Case #{i+1}: "
   f, t = line.split.collect { |i| ORDER[i.to_i] }
   if f < t
     (f...t).each { |j| print STEPS[j%2] + ' ' }
@@ -24,5 +23,4 @@ STDIN.readlines.each do |line|
   else
     puts "Take the stairs!"
   end
-  n += 1
 end

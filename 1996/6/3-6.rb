@@ -3,7 +3,7 @@
 TRASH = /([,.!?:;\n])\Z/
 SWAP = /\A(.*)([TtKkWwSs]h|[Tt]r|[Ff]l)\Z/
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   line.split.each do |word|
     word = word.gsub(TRASH, '')
     ending = $1.nil? ? '' : $1

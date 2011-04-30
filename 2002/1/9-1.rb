@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   a,b,c,n = line.split(',').collect { |i| i.to_i }
   total = a + b + c
   (n-3).times do

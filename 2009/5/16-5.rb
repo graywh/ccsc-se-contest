@@ -34,8 +34,8 @@ def suffix(word)
   end
 end
 
-STDIN.readline
-STDIN.readlines.each do |word|
+STDIN.readline.to_i.times do
+  word = STDIN.readline
   string1, word = prefix(word)
   string2, word = suffix(word)
   word = eval('"' + string2 + '"')

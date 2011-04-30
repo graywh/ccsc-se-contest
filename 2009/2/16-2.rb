@@ -2,8 +2,8 @@
 
 require 'date'
 
-STDIN.readline
-STDIN.readlines.each do |line|
+STDIN.readline.to_i.times do
+  line = STDIN.readline
   locale, time = line.split('=')
   case locale
   when 'Paris'

@@ -30,7 +30,7 @@ order = 1
 total = 0
 puts "ORDER #{order}"
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   n, i = line.split
   n = n.to_i
   if n == 0

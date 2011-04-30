@@ -14,7 +14,7 @@ class WoodChuck
 end
 
 list = []
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   n,t = line.split()
   list << WoodChuck.new(n, t)
 end

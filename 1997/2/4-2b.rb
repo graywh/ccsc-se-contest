@@ -12,7 +12,7 @@ MORSE = {
     '-.--' => 'Y', '--..' => 'Z', '*'    => ' '
 }
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   line.strip.gsub('   ', ' * ').split.each do |code|
     print MORSE[code]
   end

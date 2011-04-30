@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   a,b = line.split().collect { |n| n.to_i }
   print "#{a} * #{b} = "
   sum = 0

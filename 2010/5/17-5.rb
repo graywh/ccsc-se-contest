@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-STDIN.readlines.each do |line|
+STDIN.each do |line|
   break if line.strip == "#"
 
   tokens = line.split
@@ -8,7 +8,7 @@ STDIN.readlines.each do |line|
   text = tokens[-1]
   key = tokens[0...-2].map(&:to_i)
   res = ''
-  (0...(key.length)).each do |i|
+  key.length.times do |i|
     case op
     when 'E'
       s = 'a'[0] + key[i]
