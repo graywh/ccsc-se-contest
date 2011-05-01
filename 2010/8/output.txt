@@ -1,0 +1,8 @@
+Desktop 1:
+window 3
+window 1
+background
+window 2
+Desktop 2:
+background
+window 2
